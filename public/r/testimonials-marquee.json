@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "testimonials-marquee",
+  "title": "Testimonials Marquee",
+  "author": "tusharvarshney <tushar@tusharvarshney.com>",
+  "description": "Scrolling marquee to showcase user testimonials.",
+  "registryDependencies": [
+    "@kibo-ui/marquee",
+    "https://tusharvarshney.com/r/testimonial.json"
+  ],
+  "files": [],
+  "docs": "https://tusharvarshney.com/components/testimonials-marquee",
+  "type": "registry:component"
+}
