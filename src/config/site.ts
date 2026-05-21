@@ -43,9 +43,9 @@ export const MOBILE_NAV: NavItem[] = [
 
 export const X_HANDLE = "@tusharv369"
 export const GITHUB_USERNAME = "tusharv2005"
-export const SOURCE_CODE_GITHUB_REPO = "tusharvarshney/tusharvarshney.com"
+export const SOURCE_CODE_GITHUB_REPO = "tusharv2005/tusharvarshney.me"
 export const SOURCE_CODE_GITHUB_URL =
-  "https://github.com/tusharvarshney/tusharvarshney.com"
+  "https://github.com/tusharv2005/tusharvarshney.me"
 
 export const SPONSORSHIP_URL = "https://github.com/sponsors/tusharvarshney"
 
