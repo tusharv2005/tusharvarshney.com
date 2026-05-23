@@ -42,3 +42,6 @@ next-env.d.ts
 
 # ncdai
 .ncdai
+
+# resume PDF
+/public/Tushar.pdf

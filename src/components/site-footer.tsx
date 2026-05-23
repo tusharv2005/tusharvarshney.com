@@ -9,11 +9,11 @@ export function SiteFooter() {
   return (
     <footer className="max-w-screen overflow-x-hidden px-2">
       <div className="screen-line-top mx-auto border-x border-line pt-4 group-has-data-[slot=layout-wide]/layout:container md:max-w-3xl">
-        <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground [&_span]:mx-0.5 [&_span]:inline-block">
+        <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground [&_span]:mx-1.5 [&_span]:inline-block">
           Want to collaborate?<span>/</span>
           <a
             className="font-medium text-foreground link-underline"
-            href="/vcard"
+            href="/Tushar.pdf"
             target="_blank"
             rel="noopener"
           >
@@ -22,7 +22,9 @@ export function SiteFooter() {
           <span>/</span>
           <a
             className="font-medium text-foreground link-underline"
-            href="mailto:tvarshney585@gmail.com"
+            href="/vcard"
+            target="_blank"
+            rel="noopener"
           >
             Hire me for your next project
           </a>
