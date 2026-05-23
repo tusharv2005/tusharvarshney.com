@@ -39,13 +39,13 @@ export const SOCIAL_LINKS: SocialLink[] = [
     href: "https://discord.com/users/1186630645443739651",
   },
   {
-    icon: "https://cdn.simpleicons.org/snapchat",
+    icon: "https://cdn.simpleicons.org/snapchat/FFFC00",
     title: "Snapchat",
     subtitle: "@tusharvarshney",
     href: "https://www.snapchat.com/@tusharv0003",
   },
   {
-    icon: "https://cdn.simpleicons.org/instagram",
+    icon: "https://cdn.simpleicons.org/instagram/E4405F",
     title: "Instagram",
     subtitle: "@thetusharvarshney",
     href: "https://www.instagram.com/thetusharvarshney",
