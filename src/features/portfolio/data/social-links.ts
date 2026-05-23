@@ -27,7 +27,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 
   {
-    icon: "https://assets.tusharvarshney.com/images/link-icons/zalo.webp?v=2",
+    icon: "/WordMark.png",
     title: "Horizn Games",
     subtitle: "HoriznGames",
     href: "https://zalo.me/2353934240045322830",
