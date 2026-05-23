@@ -51,7 +51,7 @@ export function ExperiencePositionItem({
             {position.icon ?? <BriefcaseBusinessIcon />}
           </div>
 
-          <div className="flex flex-1 items-center gap-2">
+          <div className="flex flex-1 items-center gap-3">
             <h4 className="font-medium text-balance">{position.title}</h4>
 
             {position.isCurrent && (
