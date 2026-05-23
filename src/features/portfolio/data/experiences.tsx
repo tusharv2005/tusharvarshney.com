@@ -38,60 +38,56 @@ export const EXPERIENCES: Experience[] = [
     isCurrentEmployer: true,
   },
   {
-    id: "quaric",
-    companyName: "Quaric",
-    companyLogo:
-      "https://assets.tusharvarshney.com/images/companies/quaric.svg",
-    companyWebsite: "https://quaric.com",
+    id: "mahindra",
+    companyName: "Mahindra Rise",
+    companyLogo: "/images.png",
+    companyWebsite: "//",
     positions: [
       {
         id: "2",
-        title: "Design Engineer",
+        title: "AI Engineering Intern",
         employmentPeriod: {
-          start: "03.2024",
+          start: "05.2026",
+          end: "07.2026",
         },
-        employmentType: "Part-time",
+        employmentType: "Internship",
         icon: <CodeXmlIcon />,
-        description: `- Created Quaric Brand Identity.
-- Created the Quaric Design System to standardize design practices and accelerate development.
+        description: `- Worked on Mahindra’s voice AI platform “Naina”, building conversational intelligence for enterprise user interactions.
+- Developed enterprise AI agent solutions across multiple business use-cases to improve automation and customer engagement.
+- Contributed to designing scalable AI systems aligned with enterprise-specific requirements and operational needs.
 
-In-house Project: [Quaric Website](https://quaric.com)
-- Designed the UI/UX for Quaric Website, delivering a seamless experience.
-- Developed online ordering to streamline purchases.
-- Integrated VNPAY-QR for secure transactions.
-- Registered the e-commerce site with [online.gov.vn](http://online.gov.vn/website/chi-tiet-115855) for compliance.
+Project: [Naina Voice AI Platform](https://quaric.com)
+- Worked on improving voice-based AI assistant capabilities for natural, context-aware enterprise conversations.
+- Assisted in enhancing dialogue flows and integration of AI modules for smoother user interactions.
+- Supported refinement of response quality using feedback loops and usage analytics.
 
-In-house Project: [ZaDark](https://zadark.com)
-- Build and maintain ZaDark.com with Docusaurus, integrating AdSense.
-- Develop and maintain the ZaDark extension for Zalo Web on Chrome, Safari, Edge, and Firefox — with 20k+ active users via Chrome Web Store (as of Sep 2025).`,
+Project: [AI Search & Schematic Search](https://zadark.com)
+- Developed and integrated AI-powered semantic search for improved enterprise knowledge discovery.
+- Contributed to integration of search systems within Mahindra’s internal AI platform ecosystem.
+- Improved search relevance and accuracy using AI-based ranking and context understanding.`,
         skills: [
-          "Next.js",
-          "Strapi",
-          "Auth0",
-          "VNPAY-QR",
-          "Docker",
-          "NGINX",
-          "Google Cloud",
-          "Docusaurus",
-          "Extension",
-          "UI/UX Design",
-          "UX Writing",
-          "Design System",
-          "Brand Design",
-          "Figma",
-          "Research",
+          "Generative AI",
+          "Semantic Search",
+          "Conversational AI",
+          "Analytics",
+          "AI Automation",
+          "Search Systems",
+          "Customer Engagement",
+          "Product Development",
+          "Scalable Systems",
+          "Enterprise AI",
         ],
       },
-      {
-        id: "1",
-        title: "Founder",
-        employmentPeriod: {
-          start: "03.2024",
-        },
-        employmentType: "Part-time",
-        icon: <LightbulbIcon />,
-        skills: ["Business Ownership", "Business Law", "Business Tax"],
-      },
+      // {
+      //   id: "1",
+      //   title: "Founder",
+      //   employmentPeriod: {
+      //     start: "03.2024",
+      //   },
+      //   employmentType: "Part-time",
+      //   icon: <LightbulbIcon />,
+      //   skills: ["Business Ownership", "Business Law", "Business Tax"],
+      // },
     ],
     isCurrentEmployer: true,
   },
