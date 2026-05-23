@@ -19,6 +19,8 @@ export type ExperiencePosition = {
   skills?: string[]
   /** Whether the position is expanded by default in the UI. */
   isExpanded?: boolean
+  /** Marks this position as current/active for highlighting. */
+  isCurrent?: boolean
 }
 
 export type Experience = {

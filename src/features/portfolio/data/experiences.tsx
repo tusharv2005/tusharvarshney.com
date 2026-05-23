@@ -276,7 +276,7 @@ In-house Project: [ZaDark](https://zadark.com)
     positions: [
       {
         id: "4",
-        title: "SVKM's NMIMS — MBA",
+        title: "SVKM's Narsee Monjee Institute of Management Studies — MBA",
         employmentPeriod: {
           start: "06.2023",
           end: "Present",
@@ -299,6 +299,7 @@ In-house Project: [ZaDark](https://zadark.com)
           "Negotiation",
           "Leadership",
         ],
+        isCurrent: true,
       },
 
       {
@@ -326,6 +327,7 @@ In-house Project: [ZaDark](https://zadark.com)
           "Software Engineering",
           "Teamwork",
         ],
+        isCurrent: true,
       },
       {
         id: "2",
