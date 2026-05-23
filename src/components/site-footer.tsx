@@ -10,8 +10,22 @@ export function SiteFooter() {
     <footer className="max-w-screen overflow-x-hidden px-2">
       <div className="screen-line-top mx-auto border-x border-line pt-4 group-has-data-[slot=layout-wide]/layout:container md:max-w-3xl">
         <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground [&_span]:mx-0.5 [&_span]:inline-block">
-          Inspired by tailwindcss.com<span>/</span>ui.shadcn.com<span>/</span>
-          vercel.com<span>/</span>evilcharts.com
+          Want to collaborate?<span>/</span>
+          <a
+            className="font-medium text-foreground link-underline"
+            href="/vcard"
+            target="_blank"
+            rel="noopener"
+          >
+            View resume
+          </a>
+          <span>/</span>
+          <a
+            className="font-medium text-foreground link-underline"
+            href="mailto:tvarshney585@gmail.com"
+          >
+            Hire me for your next project
+          </a>
         </p>
 
         <p className="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
