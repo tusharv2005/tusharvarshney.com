@@ -51,17 +51,19 @@ export function ExperiencePositionItem({
             {position.icon ?? <BriefcaseBusinessIcon />}
           </div>
 
-          <h4 className="flex-1 font-medium text-balance">{position.title}</h4>
+          <div className="flex flex-1 items-center gap-2">
+            <h4 className="font-medium text-balance">{position.title}</h4>
 
-          {position.isCurrent && (
-            <span
-              className="relative flex items-center justify-center"
-              aria-label="Current"
-            >
-              <span className="absolute inline-flex size-3 animate-ping rounded-full bg-info opacity-50" />
-              <span className="relative inline-flex size-2 rounded-full bg-info" />
-            </span>
-          )}
+            {position.isCurrent && (
+              <span
+                className="relative flex shrink-0 items-center justify-center"
+                aria-label="Current"
+              >
+                <span className="absolute inline-flex size-3 animate-ping rounded-full bg-info opacity-50" />
+                <span className="relative inline-flex size-2 rounded-full bg-info" />
+              </span>
+            )}
+          </div>
 
           <div className="shrink-0 text-muted-foreground group-data-disabled:hidden [&_svg]:size-4">
             <CollapsibleChevronsIcon duration={0.15} />
