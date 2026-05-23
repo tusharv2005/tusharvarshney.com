@@ -9,28 +9,28 @@ import type { Experience } from "../types/experiences"
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "shadcncraft",
-    companyName: "shadcncraft",
-    companyLogo:
-      "https://assets.tusharvarshney.com/images/companies/shadcncraft.svg",
-    companyWebsite: "https://shadcncraft.com?atp=tusharvarshney",
+    id: "HoriznGames",
+    companyName: "Horizn Games",
+    companyLogo: "/WordMark.png",
+    companyWebsite:
+      "https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster",
     positions: [
       {
         id: "1",
-        title: "Design Engineer",
+        title: "Founder ",
         employmentPeriod: {
           start: "01.2026",
         },
         employmentType: "Full-time",
-        icon: <CodeXmlIcon />,
+        icon: <LightbulbIcon />,
         description:
-          "- Work on the registry and React component library.\n- Design and build Pro application components and blocks, from Figma to production-ready React.",
+          "- Lead game development and studio operations for Horizn Games.\n- Design and build engaging mobile games from concept to Google Play Store release.",
         skills: [
-          "TypeScript",
-          "Next.js",
-          "Tailwind CSS",
-          "shadcn/registry",
-          "Figma",
+          "Unity",
+          "Game Development",
+          "Game Design",
+          "Mobile Optimization",
+          "Product Management",
         ],
         isExpanded: true,
       },
@@ -275,11 +275,37 @@ In-house Project: [ZaDark](https://zadark.com)
     companyName: "Education",
     positions: [
       {
-        id: "3",
-        title: "University of Science — VNUHCM",
+        id: "4",
+        title: "SVKM's Narsee Monjee Institute of Management Studies",
         employmentPeriod: {
-          start: "08.2018",
-          end: "10.2026",
+          start: "06.2023",
+          end: "Present",
+        },
+        icon: <GraduationCapIcon />,
+        description: `- Currently studying for a Bachelor's degree in Information Systems.
+- Language Proficiency: B1 level in English (CEFR).
+- Achieved several awards, including:
+  - Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
+  - 2nd Prize — Business Startup Competition 2019`,
+        skills: [
+          "AI Development",
+          "Machine Learning",
+          "NLP",
+          "Typescript",
+          "DSA",
+          "LLM Applications",
+          "Systems Design",
+          "Database Management",
+          "Software Engineering",
+          "Teamwork",
+        ],
+      },
+      {
+        id: "3",
+        title: "SVKM's Narsee Monjee Institute of Management Studies",
+        employmentPeriod: {
+          start: "06.2023",
+          end: "Present",
         },
         icon: <GraduationCapIcon />,
         description: `- Currently studying for a Bachelor’s degree in Information Systems.
@@ -288,24 +314,24 @@ In-house Project: [ZaDark](https://zadark.com)
   - Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
   - 2nd Prize — Business Startup Competition 2019`,
         skills: [
-          "C++",
-          "Java",
-          "Python",
-          "PHP",
+          "AI Development",
+          "Machine Learning",
+          "NLP",
+          "Typescript",
           "DSA",
-          "Advanced Databases",
+          "LLM Applications",
           "Systems Design",
-          "Distributed Systems",
+          "Database Management",
           "Software Engineering",
           "Teamwork",
         ],
       },
       {
         id: "2",
-        title: "Ly Tu Trong High School for the Gifted — Can Tho City",
+        title: "Kishinchand Chellaram College",
         employmentPeriod: {
-          start: "08.2015",
-          end: "06.2018",
+          start: "06.2021",
+          end: "08.2023",
         },
         icon: <GraduationCapIcon />,
         description: `- Student of the Specialized Computer Science Program.
@@ -324,21 +350,21 @@ In-house Project: [ZaDark](https://zadark.com)
 - Developed websites based on Laravel framework.
 - Built websites with PHP and MySQL, following the MVC architecture.`,
         skills: [
-          "Algorithms",
-          "C++",
-          "PHP",
-          "MySQL",
-          "Laravel",
-          "Node.js",
-          "Pandoc",
+          "Computer Science",
+          "Physics",
+          "Chemistry",
+          "Economics",
+          "Java",
+          "Python",
+          "Problem Solving",
         ],
       },
       {
         id: "1",
-        title: "Thuan Hung Secondary School",
+        title: "Bharda New High School & Junior College",
         employmentPeriod: {
-          start: "08.2011",
-          end: "06.2015",
+          start: "06.2011",
+          end: "05.2020",
         },
         icon: <GraduationCapIcon />,
         description: `- Recognized as the most outstanding student of the district.
@@ -348,7 +374,13 @@ In-house Project: [ZaDark](https://zadark.com)
   - 1st Prize — Can Tho City Young Informatics Contest 2014
 - Achieved the title of Outstanding Student from Grade 6-9.
 - Developed websites using the open-source NukeViet CMS.`,
-        skills: ["Pascal", "NukeViet", "HTML", "CSS", "JavaScript"],
+        skills: [
+          "Science",
+          "Mathematics",
+          "Computer Basics",
+          "Discipline",
+          "Logical Reasoning",
+        ],
       },
     ],
   },
