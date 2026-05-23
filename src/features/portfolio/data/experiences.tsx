@@ -276,33 +276,34 @@ In-house Project: [ZaDark](https://zadark.com)
     positions: [
       {
         id: "4",
-        title: "SVKM's Narsee Monjee Institute of Management Studies",
+        title: "SVKM's NMIMS — MBA",
         employmentPeriod: {
           start: "06.2023",
           end: "Present",
         },
         icon: <GraduationCapIcon />,
-        description: `- Currently studying for a Bachelor's degree in Information Systems.
-- Language Proficiency: B1 level in English (CEFR).
+        description: `- Currently pursuing an MBA focused on business strategy, management, and entrepreneurship.
+- Developing expertise in marketing, finance, leadership, and business analytics.
 - Achieved several awards, including:
   - Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
   - 2nd Prize — Business Startup Competition 2019`,
         skills: [
-          "AI Development",
-          "Machine Learning",
-          "NLP",
-          "Typescript",
-          "DSA",
-          "LLM Applications",
-          "Systems Design",
-          "Database Management",
-          "Software Engineering",
-          "Teamwork",
+          "Entrepreneurship",
+          "Business Strategy",
+          "Financial Management",
+          "Business Analytics",
+          "Decision Making",
+          "Market Research",
+          "Brand Management",
+          "Marketing",
+          "Negotiation",
+          "Leadership",
         ],
       },
+
       {
         id: "3",
-        title: "SVKM's Narsee Monjee Institute of Management Studies",
+        title: "SVKM's NMIMS — B.Tech in Artificial Intelligence",
         employmentPeriod: {
           start: "06.2023",
           end: "Present",
@@ -363,8 +364,8 @@ In-house Project: [ZaDark](https://zadark.com)
         id: "1",
         title: "Bharda New High School & Junior College",
         employmentPeriod: {
-          start: "06.2011",
-          end: "05.2020",
+          start: "06.2010",
+          end: "08.2020",
         },
         icon: <GraduationCapIcon />,
         description: `- Recognized as the most outstanding student of the district.
