@@ -44,4 +44,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
     subtitle: "@tusharvarshney",
     href: "https://www.snapchat.com/@tusharv0003",
   },
+  {
+    icon: "https://cdn.simpleicons.org/instagram",
+    title: "Instagram",
+    subtitle: "@thetusharvarshney",
+    href: "https://www.instagram.com/thetusharvarshney",
+  },
 ]
