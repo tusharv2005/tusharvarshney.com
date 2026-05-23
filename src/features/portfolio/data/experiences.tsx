@@ -226,28 +226,28 @@ In-house Project: [ZaDark](https://zadark.com)
     positions: [
       {
         id: "2",
-        title: "Full-stack Developer",
+        title: "Content Creator",
         employmentPeriod: {
-          start: "2018",
-          end: "2020",
+          start: "2023",
+          end: "",
         },
-        employmentType: "Part-time",
-        description: `- Built an order management website with real-time delivery tracking.
-- Developed an e-commerce site for bird’s nest products.
-- Created a map to display monitoring station data.
-- Designed a customizable WordPress landing page.`,
+        employmentType: "Full-time",
+        description: `- Grew faceless social media pages to 350K+ followers across multiple platforms.
+- Generated 40M+ views through short-form content, viral videos, and audience-focused strategies.
+- Created and edited engaging videos, thumbnails, and promotional content for online growth.
+- Built content strategies focused on branding, audience engagement, and platform optimization.`,
         icon: <CodeXmlIcon />,
         skills: [
-          "Laravel",
-          "React",
-          "Express.js",
-          "Socket.IO",
-          "MongoDB",
-          "Firebase",
-          "WordPress",
-          "Docker",
-          "NGINX",
+          "Content Creation",
+          "Social Media Management",
+          "Visual Storytelling",
+          "Branding",
+          "Creative Strategy",
+          "Audience Engagement",
+          "Content Planning",
+          "Short-form Content",
         ],
+        isCurrent: true,
       },
       {
         id: "1",
@@ -257,7 +257,7 @@ In-house Project: [ZaDark](https://zadark.com)
           end: "2019",
         },
         employmentType: "Part-time",
-        description: "Designed logos, posters, ads, and UI.",
+        description: "Designed logos, posters, thumbnails, ads, and UI.",
         icon: <DraftingCompassIcon />,
         skills: [
           "Creativity",
