@@ -235,7 +235,7 @@ In-house Project: [ZaDark](https://zadark.com)
         description: `- Grew faceless social media pages to 350K+ followers across multiple platforms.
 - Generated 40M+ views through short-form content, viral videos, and audience-focused strategies.
 - Created and edited engaging videos, thumbnails, and promotional content for online growth.
-- Built content strategies focused on branding, audience engagement, and platform optimization.`,
+- Worked with multiple clients on branding, content creation, and social media growth strategies.`,
         icon: <CodeXmlIcon />,
         skills: [
           "Content Creation",
