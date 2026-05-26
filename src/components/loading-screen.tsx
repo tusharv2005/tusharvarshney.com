@@ -9,6 +9,7 @@ export function LoadingScreen() {
     if (typeof window === "undefined") return false
     return window.sessionStorage.getItem(LOADING_KEY) !== "yes"
   })
+  const [isExpanding, setIsExpanding] = useState(false)
 
   useEffect(() => {
     if (!show) {
@@ -20,14 +21,20 @@ export function LoadingScreen() {
     // Mark as shown immediately
     window.sessionStorage.setItem(LOADING_KEY, "yes")
 
-    // Hide after 500ms
-    const timer = setTimeout(() => {
+    // Start expanding animation after 300ms
+    const expandTimer = setTimeout(() => {
+      setIsExpanding(true)
+    }, 300)
+
+    // Hide after expansion completes (300ms + 700ms animation)
+    const hideTimer = setTimeout(() => {
       setShow(false)
       document.documentElement.style.visibility = "visible"
-    }, 2000)
+    }, 1000)
 
     return () => {
-      clearTimeout(timer)
+      clearTimeout(expandTimer)
+      clearTimeout(hideTimer)
       document.documentElement.style.visibility = "visible"
     }
   }, [show])
@@ -36,8 +43,15 @@ export function LoadingScreen() {
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
-      {/* 4-pointed star without glow */}
-      <div className="animate-spin-slow relative h-48 w-48">
+      {/* Star that expands to reveal content */}
+      <div
+        className="animate-spin-slow relative"
+        style={{
+          width: isExpanding ? "300vmax" : "12rem",
+          height: isExpanding ? "300vmax" : "12rem",
+          transition: "all 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+        }}
+      >
         <svg
           viewBox="0 0 100 100"
           fill="none"
