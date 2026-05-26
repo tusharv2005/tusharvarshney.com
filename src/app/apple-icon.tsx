@@ -23,24 +23,20 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          padding: "30px",
         }}
       >
-        <svg
-          width="120"
-          height="120"
-          viewBox="0 0 448 256"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
           style={{
-            transform: "translateY(-8px)",
+            fontSize: "110px",
+            fontWeight: 700,
+            color: "black",
+            fontFamily: "system-ui, -apple-system, sans-serif",
+            letterSpacing: "-2px",
+            display: "flex",
           }}
         >
-          <path
-            d="M0 0h192v64h-64v128h32v64H32v-64h32V64H0ZM256 0v64h32v64h32v64h32v64h64v-64h32v-64h32v-64h32v-64h-64v64h-32v64h-64v-64h-32v-64Z"
-            fill="black"
-          />
-        </svg>
+          TV
+        </div>
       </div>
     ),
     {
