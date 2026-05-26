@@ -18,7 +18,7 @@ export default function Icon() {
       <div
         style={{
           fontSize: 24,
-          background: "black",
+          background: "white",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -27,15 +27,15 @@ export default function Icon() {
         }}
       >
         <svg
-          width="32"
-          height="32"
+          width="28"
+          height="28"
           viewBox="0 0 448 256"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M0 0h192v64h-64v128h32v64H32v-64h32V64H0ZM256 0v64h32v64h32v64h32v64h64v-64h32v-64h32v-64h32v-64h-64v64h-32v64h-64v-64h-32v-64Z"
-            fill="white"
+            fill="black"
           />
         </svg>
       </div>

@@ -20,7 +20,7 @@ export const USER: User = {
   phoneNumber: "+91 7021871011", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "tvarshney585@gmail.com", // base64 encoded
   website: "https://tusharvarshney.com",
-  jobTitle: "Studio Founder",
+  jobTitle: "AI Engineer",
   jobs: [
     {
       title: "Studio Founder",
