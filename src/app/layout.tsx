@@ -6,6 +6,7 @@ import Script from "next/script"
 import { NuqsAdapter } from "nuqs/adapters/next/app"
 import type { WebSite, WithContext } from "schema-dts"
 
+import { LoadingScreen } from "@/components/loading-screen"
 import { Providers } from "@/components/providers"
 import { META_THEME_COLORS, SITE_INFO, X_HANDLE } from "@/config/site"
 import { USER } from "@/features/portfolio/data/user"
@@ -126,6 +127,7 @@ export default function RootLayout({
       )}
 
       <body>
+        <LoadingScreen />
         <Providers>
           <NuqsAdapter>{children}</NuqsAdapter>
         </Providers>
