@@ -2,14 +2,12 @@
 
 import { useEffect, useState } from "react"
 
-function shouldShowLoading() {
-  if (typeof window === "undefined") return true
-  const hasSeenLoading = sessionStorage.getItem("hasSeenLoading")
-  return hasSeenLoading !== "true"
-}
-
 export function LoadingScreen() {
-  const [isVisible, setIsVisible] = useState(shouldShowLoading)
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window === "undefined") return true
+    const hasSeenLoading = sessionStorage.getItem("hasSeenLoading")
+    return hasSeenLoading !== "true"
+  })
 
   useEffect(() => {
     // If already marked as seen, don't show at all
