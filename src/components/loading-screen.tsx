@@ -2,36 +2,32 @@
 
 import { useEffect, useState } from "react"
 
+const LOADING_KEY = "site-loading-shown"
+
 export function LoadingScreen() {
-  const [isVisible, setIsVisible] = useState(() => {
-    if (typeof window === "undefined") return true
-    const hasSeenLoading = sessionStorage.getItem("hasSeenLoading")
-    return hasSeenLoading !== "true"
+  const [show, setShow] = useState(() => {
+    // Check on initial render only
+    if (typeof window === "undefined") return false
+    const hasShown = window.sessionStorage.getItem(LOADING_KEY)
+    return hasShown !== "yes"
   })
 
   useEffect(() => {
-    // If already marked as seen, don't show at all
-    if (!isVisible) return undefined
+    if (!show) return undefined
 
-    // Mark as seen immediately to prevent showing on next refresh
-    if (typeof window !== "undefined") {
-      sessionStorage.setItem("hasSeenLoading", "true")
-    }
+    // Mark as shown immediately
+    window.sessionStorage.setItem(LOADING_KEY, "yes")
 
-    // Show loading screen for 500ms, then hide
+    // Hide after 500ms
     const timer = setTimeout(() => {
-      setIsVisible(false)
+      setShow(false)
     }, 500)
 
-    return () => {
-      clearTimeout(timer)
-    }
-  }, [isVisible])
+    return () => clearTimeout(timer)
+  }, [show])
 
-  // Don't render anything if not visible
-  if (!isVisible) {
-    return null
-  }
+  // Don't render if not showing
+  if (!show) return null
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
