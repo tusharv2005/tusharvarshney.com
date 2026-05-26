@@ -2,16 +2,17 @@
 
 import { useEffect, useState } from "react"
 
+function checkFirstVisit() {
+  if (typeof window === "undefined") return true
+  return !sessionStorage.getItem("hasVisited")
+}
+
 export function LoadingScreen() {
-  // Check if this is the first visit on initial render
-  const [isLoading, setIsLoading] = useState(() => {
-    if (typeof window === "undefined") return true
-    return !sessionStorage.getItem("hasVisited")
-  })
+  const [isLoading, setIsLoading] = useState(checkFirstVisit)
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    if (!isLoading) return
+    if (!isLoading) return undefined
 
     // Simulate loading progress
     const interval = setInterval(() => {
@@ -20,7 +21,9 @@ export function LoadingScreen() {
           clearInterval(interval)
           setTimeout(() => {
             setIsLoading(false)
-            sessionStorage.setItem("hasVisited", "true")
+            if (typeof window !== "undefined") {
+              sessionStorage.setItem("hasVisited", "true")
+            }
           }, 300)
           return 100
         }
@@ -28,44 +31,43 @@ export function LoadingScreen() {
       })
     }, 30)
 
-    return () => clearInterval(interval)
+    return () => {
+      clearInterval(interval)
+    }
   }, [isLoading])
 
   if (!isLoading) return null
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-8">
         {/* Loading text */}
-        <span className="text-sm font-medium tracking-wider text-white">
+        <span className="text-base font-normal tracking-[0.2em] text-white/80">
           LOADING
         </span>
 
-        {/* Sparkle/Star animation */}
-        <div className="relative h-8 w-8">
+        {/* 4-pointed sparkle/star animation */}
+        <div className="relative h-16 w-16">
           <svg
-            viewBox="0 0 24 24"
+            viewBox="0 0 100 100"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="animate-spin-slow h-full w-full"
           >
+            {/* 4-pointed star shape */}
             <path
-              d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z"
+              d="M50 0 C55 25, 55 25, 50 50 C25 45, 25 45, 0 50 C25 55, 25 55, 50 50 C55 75, 55 75, 50 100 C45 75, 45 75, 50 50 C75 55, 75 55, 100 50 C75 45, 75 45, 50 50 C45 25, 45 25, 50 0 Z"
               fill="white"
-              className="animate-pulse"
-            />
-            <path
-              d="M12 6L12.75 9.25L16 10L12.75 10.75L12 14L11.25 10.75L8 10L11.25 9.25L12 6Z"
-              fill="white"
-              opacity="0.6"
             />
           </svg>
         </div>
 
-        {/* Progress percentage */}
-        <span className="text-sm font-medium tracking-wider text-white">
-          {progress}%
-        </span>
+        {/* Progress percentage with border */}
+        <div className="rounded-full border-2 border-white/40 px-6 py-2">
+          <span className="text-base font-normal tracking-wider text-white/80">
+            {progress}%
+          </span>
+        </div>
       </div>
     </div>
   )
