@@ -6,21 +6,16 @@ const LOADING_KEY = "site-loading-shown"
 
 export function LoadingScreen() {
   const [show, setShow] = useState(() => {
-    // Check on initial render only
     if (typeof window === "undefined") return false
-    const hasShown = window.sessionStorage.getItem(LOADING_KEY)
-    return hasShown !== "yes"
+    return window.sessionStorage.getItem(LOADING_KEY) !== "yes"
   })
 
   useEffect(() => {
     if (!show) {
-      // If not showing loading screen, make sure body is visible
-      document.body.style.visibility = "visible"
+      // Make sure html is visible if not showing loading
+      document.documentElement.style.visibility = "visible"
       return undefined
     }
-
-    // Hide body content while loading screen is showing
-    document.body.style.visibility = "hidden"
 
     // Mark as shown immediately
     window.sessionStorage.setItem(LOADING_KEY, "yes")
@@ -28,16 +23,15 @@ export function LoadingScreen() {
     // Hide after 500ms
     const timer = setTimeout(() => {
       setShow(false)
-      document.body.style.visibility = "visible"
+      document.documentElement.style.visibility = "visible"
     }, 500)
 
     return () => {
       clearTimeout(timer)
-      document.body.style.visibility = "visible"
+      document.documentElement.style.visibility = "visible"
     }
   }, [show])
 
-  // Don't render if not showing
   if (!show) return null
 
   return (

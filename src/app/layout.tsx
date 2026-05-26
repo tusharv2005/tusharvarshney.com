@@ -96,6 +96,19 @@ export default function RootLayout({
       <head>
         <script
           type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                var hasShown = sessionStorage.getItem('site-loading-shown');
+                if (hasShown !== 'yes') {
+                  document.documentElement.style.visibility = 'hidden';
+                }
+              } catch(_) {}
+            `,
+          }}
+        />
+        <script
+          type="text/javascript"
           dangerouslySetInnerHTML={{ __html: darkModeScript }}
         />
         {/*
