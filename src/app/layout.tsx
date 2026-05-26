@@ -75,31 +75,7 @@ export const metadata: Metadata = {
     creator: X_HANDLE,
     images: [SITE_INFO.ogImage],
   },
-  icons: {
-    icon: [
-      {
-        url: "https://assets.tusharvarshney.com/images/favicon.ico",
-        sizes: "32x32",
-      },
-      {
-        url: "https://assets.tusharvarshney.com/images/favicon.svg",
-        sizes: "any",
-        type: "image/svg+xml",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "https://assets.tusharvarshney.com/images/favicon-dark.svg",
-        sizes: "any",
-        type: "image/svg+xml",
-        media: "(prefers-color-scheme: dark)",
-      },
-    ],
-    apple: {
-      url: "https://assets.tusharvarshney.com/images/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
-  },
+  // Icons are now generated via icon.tsx and apple-icon.tsx
 }
 
 export const viewport: Viewport = {

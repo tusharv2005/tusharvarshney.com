@@ -3,9 +3,9 @@ import type { Project } from "../types/projects"
 export const PROJECTS: Project[] = [
   {
     id: "react-wheel-picker",
-    title: "React Wheel Picker",
+    title: "PetalUI",
     period: {
-      start: "05.2025",
+      start: "03.2026",
     },
     link: "https://react-wheel-picker.tusharvarshney.com",
     skills: [
@@ -30,11 +30,11 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "tushardotcom",
-    title: "tusharvarshney.com",
+    title: "tusharvarshney.me",
     period: {
-      start: "01.2025",
+      start: "05.2026",
     },
-    link: "https://github.com/tusharvarshney/tusharvarshney.com",
+    link: "https://github.com/tusharv2005/tusharvarshney.me",
     skills: [
       "Open Source",
       "Next.js 16",
@@ -46,7 +46,8 @@ export const PROJECTS: Project[] = [
       "shadcn registry",
       "Vercel",
     ],
-    description: "A pixel-perfect dev portfolio and shadcn registry.",
+    description:
+      "A pixel-perfect developer portfolio where elegant design meets seamless user experience.",
     logo: "https://assets.tusharvarshney.com/images/project-logos/tushardotcom.svg",
   },
   {

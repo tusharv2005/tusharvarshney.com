@@ -34,7 +34,7 @@ export function SiteFooter() {
           Built with care 💗 by{" "}
           <a
             className="font-medium text-foreground link-underline"
-            href="https://x.com/tusharvarshney"
+            href="https://x.com/tusharv369"
             target="_blank"
             rel="noopener"
           >

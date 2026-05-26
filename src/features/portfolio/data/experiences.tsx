@@ -29,6 +29,7 @@ export const EXPERIENCES: Experience[] = [
           "Unity",
           "Game Development",
           "Game Design",
+          "Unreal",
           "Mobile Optimization",
           "Product Management",
         ],
@@ -48,7 +49,7 @@ export const EXPERIENCES: Experience[] = [
         title: "AI Engineering Intern",
         employmentPeriod: {
           start: "05.2026",
-          end: "07.2026",
+          end: "06.2026",
         },
         employmentType: "Internship",
         icon: <CodeXmlIcon />,
