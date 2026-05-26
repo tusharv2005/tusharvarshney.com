@@ -4,21 +4,25 @@ import { useEffect, useState } from "react"
 
 function shouldShowLoading() {
   if (typeof window === "undefined") return true
-  return sessionStorage.getItem("hasSeenLoading") !== "true"
+  const hasSeenLoading = sessionStorage.getItem("hasSeenLoading")
+  return hasSeenLoading !== "true"
 }
 
 export function LoadingScreen() {
   const [isVisible, setIsVisible] = useState(shouldShowLoading)
 
   useEffect(() => {
+    // If already marked as seen, don't show at all
     if (!isVisible) return undefined
+
+    // Mark as seen immediately to prevent showing on next refresh
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("hasSeenLoading", "true")
+    }
 
     // Show loading screen for 500ms, then hide
     const timer = setTimeout(() => {
       setIsVisible(false)
-      if (typeof window !== "undefined") {
-        sessionStorage.setItem("hasSeenLoading", "true")
-      }
     }, 500)
 
     return () => {
