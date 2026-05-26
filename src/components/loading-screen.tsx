@@ -2,31 +2,34 @@
 
 import { useEffect, useState } from "react"
 
-function checkFirstVisit() {
+function shouldShowLoading() {
   if (typeof window === "undefined") return true
-  return !sessionStorage.getItem("hasVisited")
+  return sessionStorage.getItem("hasSeenLoading") !== "true"
 }
 
 export function LoadingScreen() {
-  const [isLoading, setIsLoading] = useState(checkFirstVisit)
+  const [isVisible, setIsVisible] = useState(shouldShowLoading)
 
   useEffect(() => {
-    if (!isLoading) return undefined
+    if (!isVisible) return undefined
 
-    // Auto-hide after 2 seconds
-    const timeout = setTimeout(() => {
-      setIsLoading(false)
+    // Show loading screen for 500ms, then hide
+    const timer = setTimeout(() => {
+      setIsVisible(false)
       if (typeof window !== "undefined") {
-        sessionStorage.setItem("hasVisited", "true")
+        sessionStorage.setItem("hasSeenLoading", "true")
       }
-    }, 2000)
+    }, 500)
 
     return () => {
-      clearTimeout(timeout)
+      clearTimeout(timer)
     }
-  }, [isLoading])
+  }, [isVisible])
 
-  if (!isLoading) return null
+  // Don't render anything if not visible
+  if (!isVisible) {
+    return null
+  }
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
