@@ -13,7 +13,14 @@ export function LoadingScreen() {
   })
 
   useEffect(() => {
-    if (!show) return undefined
+    if (!show) {
+      // If not showing loading screen, make sure body is visible
+      document.body.style.visibility = "visible"
+      return undefined
+    }
+
+    // Hide body content while loading screen is showing
+    document.body.style.visibility = "hidden"
 
     // Mark as shown immediately
     window.sessionStorage.setItem(LOADING_KEY, "yes")
@@ -21,9 +28,13 @@ export function LoadingScreen() {
     // Hide after 500ms
     const timer = setTimeout(() => {
       setShow(false)
+      document.body.style.visibility = "visible"
     }, 500)
 
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(timer)
+      document.body.style.visibility = "visible"
+    }
   }, [show])
 
   // Don't render if not showing
