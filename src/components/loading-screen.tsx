@@ -65,9 +65,9 @@ export function LoadingScreen() {
         }}
       />
 
-      {/* Visible rotating star */}
+      {/* Visible rotating star and loading text */}
       <div
-        className="pointer-events-none fixed inset-0 flex items-center justify-center"
+        className="pointer-events-none fixed inset-0 flex flex-col items-center justify-center gap-8"
         style={{ zIndex: 10000 }}
       >
         <div
@@ -88,6 +88,17 @@ export function LoadingScreen() {
             <path d={starPath} fill="white" />
           </svg>
         </div>
+
+        {/* Loading text */}
+        <p
+          className="text-sm font-medium tracking-wider text-white"
+          style={{
+            opacity: isExpanding ? 0 : 1,
+            transition: "opacity 0.3s ease-in-out",
+          }}
+        >
+          Almost there...
+        </p>
       </div>
     </>
   )
