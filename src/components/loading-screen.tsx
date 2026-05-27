@@ -10,6 +10,9 @@ export function LoadingScreen() {
     return window.sessionStorage.getItem(LOADING_KEY) !== "yes"
   })
   const [isExpanding, setIsExpanding] = useState(false)
+  const [typedText, setTypedText] = useState("")
+
+  const fullText = "Almost there..."
 
   useEffect(() => {
     if (!show) {
@@ -18,6 +21,17 @@ export function LoadingScreen() {
     }
 
     window.sessionStorage.setItem(LOADING_KEY, "yes")
+
+    // Typing effect
+    let currentIndex = 0
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setTypedText(fullText.slice(0, currentIndex))
+        currentIndex++
+      } else {
+        clearInterval(typingInterval)
+      }
+    }, 80)
 
     // Wait 2 seconds before starting expansion
     const expandTimer = setTimeout(() => {
@@ -31,6 +45,7 @@ export function LoadingScreen() {
     }, 3200)
 
     return () => {
+      clearInterval(typingInterval)
       clearTimeout(expandTimer)
       clearTimeout(hideTimer)
       document.documentElement.style.visibility = "visible"
@@ -89,16 +104,17 @@ export function LoadingScreen() {
           </svg>
         </div>
 
-        {/* Loading text */}
-        <p
-          className="text-sm font-medium tracking-wider text-white"
+        {/* Loading text with typing effect */}
+        <div
+          className="font-mono text-sm font-medium tracking-wider text-white"
           style={{
             opacity: isExpanding ? 0 : 1,
             transition: "opacity 0.3s ease-in-out",
           }}
         >
-          Almost there...
-        </p>
+          {typedText}
+          <span className="animate-pulse">|</span>
+        </div>
       </div>
     </>
   )
