@@ -33,16 +33,16 @@ export function LoadingScreen() {
       }
     }, 80)
 
-    // Wait 2 seconds before starting expansion
+    // Wait 3 seconds before starting expansion
     const expandTimer = setTimeout(() => {
       setIsExpanding(true)
-    }, 2000)
+    }, 3000)
 
-    // Remove overlay after expansion completes (2s wait + 1.2s animation)
+    // Remove overlay after expansion completes (3s wait + 1.5s animation)
     const hideTimer = setTimeout(() => {
       setShow(false)
       document.documentElement.style.visibility = "visible"
-    }, 3200)
+    }, 4500)
 
     return () => {
       clearInterval(typingInterval)
@@ -76,7 +76,7 @@ export function LoadingScreen() {
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskComposite: "destination-out",
           transition:
-            "mask-size 1.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-mask-size 1.2s cubic-bezier(0.4, 0, 0.2, 1)",
+            "mask-size 1.5s cubic-bezier(0.4, 0, 0.2, 1), -webkit-mask-size 1.5s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       />
 
@@ -91,7 +91,7 @@ export function LoadingScreen() {
             width: isExpanding ? "400vw" : "12rem",
             height: isExpanding ? "400vw" : "12rem",
             opacity: isExpanding ? 0 : 1,
-            transition: "all 1.2s cubic-bezier(0.4, 0, 0.2, 1)",
+            transition: "all 1.5s cubic-bezier(0.4, 0, 0.2, 1)",
           }}
         >
           <svg

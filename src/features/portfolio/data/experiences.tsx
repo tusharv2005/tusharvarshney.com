@@ -40,7 +40,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: "mahindra",
-    companyName: "Mahindra Rise",
+    companyName: "Mahindra Group",
     companyLogo: "/images.png",
     companyWebsite: "//",
     positions: [

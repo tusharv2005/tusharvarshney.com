@@ -47,7 +47,7 @@ export const SOURCE_CODE_GITHUB_REPO = "tusharv2005/tusharvarshney.me"
 export const SOURCE_CODE_GITHUB_URL =
   "https://github.com/tusharv2005/tusharvarshney.me"
 
-export const SPONSORSHIP_URL = "https://github.com/sponsors/tusharvarshney"
+export const SPONSORSHIP_URL = "https://github.com/sponsors/tusharv2005"
 
 export const UTM_PARAMS = {
   utm_source: "tusharvarshney.com",

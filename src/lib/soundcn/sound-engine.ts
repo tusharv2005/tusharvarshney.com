@@ -2,6 +2,9 @@ let audioContext: AudioContext | null = null
 const bufferCache = new Map<string, AudioBuffer>()
 
 export function getAudioContext(): AudioContext {
+  if (typeof window === "undefined") {
+    throw new Error("AudioContext can only be created in browser")
+  }
   if (!audioContext) {
     audioContext = new AudioContext()
   }
@@ -9,6 +12,10 @@ export function getAudioContext(): AudioContext {
 }
 
 export async function decodeAudioData(dataUri: string): Promise<AudioBuffer> {
+  if (typeof window === "undefined") {
+    throw new Error("Audio can only be decoded in browser")
+  }
+
   const cached = bufferCache.get(dataUri)
   if (cached) return cached
 

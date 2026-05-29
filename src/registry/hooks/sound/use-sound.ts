@@ -39,13 +39,21 @@ export function useSound(
     bufferRef.current = null
 
     if (lazy) return
+    if (typeof window === "undefined") return
 
     let cancelled = false
 
-    fetchAndDecodeAudio(url).then((buffer) => {
-      if (cancelled) return
-      bufferRef.current = buffer
-    })
+    fetchAndDecodeAudio(url)
+      .then((buffer) => {
+        if (cancelled) return
+        bufferRef.current = buffer
+      })
+      .catch((err) => {
+        // Silently fail during preload - will retry on play
+        if (!cancelled) {
+          console.warn("Failed to preload audio:", err)
+        }
+      })
 
     return () => {
       cancelled = true
@@ -108,10 +116,14 @@ export function useSound(
       }
 
       // Lazy: load on first play, then play immediately.
-      fetchAndDecodeAudio(url).then((buffer) => {
-        bufferRef.current = buffer
-        startPlayback(buffer)
-      })
+      fetchAndDecodeAudio(url)
+        .then((buffer) => {
+          bufferRef.current = buffer
+          startPlayback(buffer)
+        })
+        .catch((err) => {
+          console.error("Failed to load audio:", err)
+        })
     },
     [soundEnabled, url, interrupt, playbackRate, volume, stop, onPlay, onEnd]
   )

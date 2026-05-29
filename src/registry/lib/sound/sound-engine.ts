@@ -4,6 +4,9 @@ let audioContext: AudioContext | null = null
 const bufferCache = new Map<string, Promise<AudioBuffer>>()
 
 export function getAudioContext(): AudioContext {
+  if (typeof window === "undefined") {
+    throw new Error("AudioContext can only be created in browser")
+  }
   if (!audioContext) {
     audioContext = new AudioContext()
   }
@@ -13,6 +16,11 @@ export function getAudioContext(): AudioContext {
 export function fetchAndDecodeAudio(url: string): Promise<AudioBuffer> {
   const cached = bufferCache.get(url)
   if (cached) return cached
+
+  // Ensure we're in a browser environment
+  if (typeof window === "undefined") {
+    return Promise.reject(new Error("Audio can only be loaded in browser"))
+  }
 
   const ctx = getAudioContext()
 
