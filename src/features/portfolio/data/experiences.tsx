@@ -279,9 +279,10 @@ Project: [AI Search & Schematic Search](https://zadark.com)
         icon: <GraduationCapIcon />,
         description: `- Currently pursuing an MBA focused on business strategy, management, and entrepreneurship.
 - Developing expertise in marketing, finance, leadership, and business analytics.
-- Achieved several awards, including:
-  - Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
-  - 2nd Prize — Business Startup Competition 2019`,
+- Building the managerial and strategic capabilities required to lead high-growth startups and innovative organizations.
+- Developing expertise in product strategy, go-to-market planning, and scaling technology-driven businesses.
+- Exploring financial planning, investment analysis, risk management, and corporate decision-making frameworks.
+- Building a strong foundation in entrepreneurship, venture creation, and business model innovation.`,
         skills: [
           "Entrepreneurship",
           "Business Strategy",
@@ -296,7 +297,6 @@ Project: [AI Search & Schematic Search](https://zadark.com)
         ],
         isCurrent: true,
       },
-
       {
         id: "3",
         title: "SVKM's NMIMS — B.Tech in Artificial Intelligence",
@@ -305,11 +305,13 @@ Project: [AI Search & Schematic Search](https://zadark.com)
           end: "07.2027",
         },
         icon: <GraduationCapIcon />,
-        description: `- Currently studying for a Bachelor’s degree in Information Systems.
-- Language Proficiency: B1 level in English (CEFR).
-- Achieved several awards, including:
-  - Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
-  - 2nd Prize — Business Startup Competition 2019`,
+        description: `- Pursuing a Bachelor of Technology (B.Tech) in Artificial Intelligence with a focus on intelligent systems, machine learning, and data-driven technologies.
+- Building strong foundations in Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Software Engineering.
+- Applying mathematics, probability, statistics, and linear algebra to solve complex computational and AI-related problems.
+- Developing AI-powered applications, predictive models, and scalable software systems through project-based learning.
+- Participating in technical events, hackathons, innovation programs, and collaborative engineering projects.
+- Developing end-to-end products by combining artificial intelligence, full-stack development, and user-centric design.
+- Leveraging AI to create innovative solutions across education, productivity, business, and digital experiences.`,
         skills: [
           "AI Development",
           "Machine Learning",
@@ -332,21 +334,13 @@ Project: [AI Search & Schematic Search](https://zadark.com)
           end: "08.2023",
         },
         icon: <GraduationCapIcon />,
-        description: `- Student of the Specialized Computer Science Program.
-- Granted direct admission to university due to achieving 3rd Prize at the national level.
-- [Achieved numerous awards](https://baocantho.com.vn/tushar-varshney-17-tuoi-va-19-giai-thuong-a97348.html) at city and national levels, including:
-  - [3rd Prize](https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm) — National Science and Engineering Fair 2018 (ViSEF)
-  - 1st Prize — Can Tho City Science and Engineering Fair 2018
-  - Creativity Award — Binh Duong Hackathon 2017
-  - Consolation Prize — National Youth and Children’s Creativity Contest 2016
-  - [1st Prize](https://www.youtube.com/watch?v=OYgugvjqU4A) — Can Tho City Youth and Children’s Creativity Contest 2016
-  - 3rd Prize — National Young Informatics Contest 2016
-- Achieved the title of Outstanding Student from Grade 10-12.
-- Selected for the National Excellent Student Contest in Informatics for two consecutive years during high school.
-- Honored on the school’s “Hall of Fame” for academic achievements.
-- Developed a feature using Node.js and Pandoc to recognize multiple-choice questions from .docx files and upload them to an [online quiz platform](https://youtu.be/QjR99wdmTyo) I created.
-- Developed websites based on Laravel framework.
-- Built websites with PHP and MySQL, following the MVC architecture.`,
+        description: `- Developed strong analytical and quantitative reasoning through advanced mathematics and scientific problem-solving.
+- Built a solid foundation in classical mechanics, electromagnetism, organic chemistry, and biological sciences.
+- Conducted laboratory experiments and practical investigations, strengthening observation and research skills.
+- Enhanced critical thinking, logical reasoning, and data interpretation through rigorous coursework.
+- Developed effective communication, presentation, and teamwork skills through academic projects and practical work.
+- Prepared for competitive examinations while maintaining a strong academic foundation in STEM disciplines.
+`,
         skills: [
           "Computer Science",
           "Physics",
@@ -355,6 +349,7 @@ Project: [AI Search & Schematic Search](https://zadark.com)
           "Java",
           "Python",
           "Problem Solving",
+          "Mathematics",
         ],
       },
       {
@@ -365,13 +360,13 @@ Project: [AI Search & Schematic Search](https://zadark.com)
           end: "08.2020",
         },
         icon: <GraduationCapIcon />,
-        description: `- Recognized as the most outstanding student of the district.
-- Achieved numerous awards at city and national levels:
-  - Consolation Prize — National Young Informatics Contest 2015
-  - Consolation Prize — National Young Informatics Contest 2014
-  - 1st Prize — Can Tho City Young Informatics Contest 2014
-- Achieved the title of Outstanding Student from Grade 6-9.
-- Developed websites using the open-source NukeViet CMS.`,
+        description: `- Built a strong academic foundation in Science, Mathematics, and Computer Studies.
+- Actively participated in inter-school Olympiads, quizzes, and academic competitions.
+- Trained in Karate and participated in martial arts events, developing discipline and perseverance.
+- Consistently demonstrated leadership, teamwork, and problem-solving skills through school projects and group activities.
+- Participated in science exhibitions, annual functions, and co-curricular competitions.
+- Developed strong communication, analytical thinking, and time-management skills throughout schooling.
+- Graduated with a well-rounded educational background focused on academic excellence and personal growth.`,
         skills: [
           "Science",
           "Mathematics",
