@@ -4,6 +4,7 @@ import {
   GraduationCapIcon,
   LightbulbIcon,
   SparklesIcon,
+  VideoIcon,
 } from "lucide-react"
 
 import type { Experience } from "../types/experiences"
@@ -25,7 +26,7 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Full-time",
         icon: <LightbulbIcon />,
         description:
-          "- Lead game development and studio operations for Horizn Games.\n- Design and build engaging mobile games from concept to Google Play Store release.",
+          "- Lead game development and studio operations for Horizn Games.\n- Design and build engaging mobile games from concept to Google Play Store & App Store release.",
         skills: [
           "Unity",
           "Game Development",
@@ -103,7 +104,7 @@ Project: [AI Search & Schematic Search](https://zadark.com)
         id: "2",
         title: "Lens Creator",
         employmentPeriod: {
-          start: "9.2025",
+          start: "09.2025",
         },
         employmentType: "Self-Employed",
         icon: <SparklesIcon />,
@@ -230,7 +231,7 @@ Project: [AI Search & Schematic Search](https://zadark.com)
 - Generated 40M+ views through short-form content, viral videos, and audience-focused strategies.
 - Created and edited engaging videos, thumbnails, and promotional content for online growth.
 - Worked with multiple clients on branding, content creation, and social media growth strategies.`,
-        icon: <CodeXmlIcon />,
+        icon: <VideoIcon />,
         skills: [
           "Content Creation",
           "Social Media Management",
@@ -272,8 +273,8 @@ Project: [AI Search & Schematic Search](https://zadark.com)
         id: "4",
         title: "SVKM's Narsee Monjee Institute of Management Studies — MBA",
         employmentPeriod: {
-          start: "06.2023",
-          end: "Present",
+          start: "08.2026",
+          end: "07.2028",
         },
         icon: <GraduationCapIcon />,
         description: `- Currently pursuing an MBA focused on business strategy, management, and entrepreneurship.
@@ -300,8 +301,8 @@ Project: [AI Search & Schematic Search](https://zadark.com)
         id: "3",
         title: "SVKM's NMIMS — B.Tech in Artificial Intelligence",
         employmentPeriod: {
-          start: "06.2023",
-          end: "Present",
+          start: "08.2023",
+          end: "07.2027",
         },
         icon: <GraduationCapIcon />,
         description: `- Currently studying for a Bachelor’s degree in Information Systems.

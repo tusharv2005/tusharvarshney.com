@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     id: "tushardotcom",
     title: "tusharvarshney.me",
     period: {
-      start: "05.2026",
+      start: "02.2026",
     },
     link: "https://github.com/tusharv2005/tusharvarshney.me",
     skills: [
@@ -114,11 +114,10 @@ export const PROJECTS: Project[] = [
       "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/tusharvarshney/qabox",
   },
   {
-    id: "taskbox",
-    title: "TaskBox",
+    id: "klyp",
+    title: "klyp",
     period: {
       start: "07.2023",
-      end: "07.2023",
     },
     link: "https://github.com/tusharvarshney/taskbox",
     skills: [
@@ -131,6 +130,7 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/tusharvarshney/taskbox",
+    logo: "/klyp.png",
   },
   {
     id: "daichat-app",
@@ -205,7 +205,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "04.2026",
     },
-    link: "https://github.com/tusharvarshney/DMessage",
+    link: "https://github.com/tusharv2005/Livecard",
     skills: [
       "Self-learning Project",
       "Pet Project",
@@ -216,26 +216,26 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "LiveCard turns your Linkedin profile into a dynamic, animated identity - going beyond boring banners to create a profile that actually moves, reacts, and stands out.",
-    logo: "Livecard.png",
+    logo: "/livecard.png",
   },
-  {
-    id: "study-english",
-    title: "Study English",
-    period: {
-      start: "11.2016",
-      end: "12.2017",
-    },
-    link: "https://www.youtube.com/watch?v=OYgugvjqU4A",
-    skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-    ],
-    description: `Study English is a free, mobile-friendly website for high school English learning, offering vocabulary, quizzes, listening practice, and more.
-- Consolation Prize — National Youth and Children’s Creativity Contest 2016
-- 1st Prize — Can Tho City Youth and Children’s Creativity Contest 2016
-- Consolation Prize — Can Tho City Young Informatics Contest 2016`,
-  },
+  //   {
+  //     id: "study-english",
+  //     title: "Study English",
+  //     period: {
+  //       start: "11.2016",
+  //       end: "12.2017",
+  //     },
+  //     link: "https://www.youtube.com/watch?v=OYgugvjqU4A",
+  //     skills: [
+  //       "National Competition",
+  //       "Creative Software",
+  //       "PHP",
+  //       "Laravel 4",
+  //       "MySQL",
+  //     ],
+  //     description: `Study English is a free, mobile-friendly website for high school English learning, offering vocabulary, quizzes, listening practice, and more.
+  // - Consolation Prize — National Youth and Children’s Creativity Contest 2016
+  // - 1st Prize — Can Tho City Youth and Children’s Creativity Contest 2016
+  // - Consolation Prize — Can Tho City Young Informatics Contest 2016`,
+  //   },
 ]
