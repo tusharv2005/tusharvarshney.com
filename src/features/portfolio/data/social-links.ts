@@ -27,16 +27,16 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 
   {
-    icon: "/WordMark.png",
-    title: "Horizn Games",
-    subtitle: "HoriznGames",
-    href: "https://zalo.me/2353934240045322830",
+    icon: "https://cdn.simpleicons.org/bluesky/0285FF",
+    title: "Bluesky",
+    subtitle: "@tusharvarshney",
+    href: "https://bsky.app/profile/tusharvarshney.bsky.social",
   },
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/discord.webp?v=2",
-    title: "Discord",
+    icon: "https://cdn.simpleicons.org/spotify/1DB954",
+    title: "Spotify",
     subtitle: "tusharvarshney",
-    href: "https://discord.com/users/1186630645443739651",
+    href: "https://open.spotify.com/playlist/1xuvpQwQZDFwuWTJcM2lfi?si=O5Vq13zZQg2h7ub8d6YoCQ&pi=VzI--vBDSJek-",
   },
   {
     icon: "https://cdn.simpleicons.org/snapchat/FFFC00",
