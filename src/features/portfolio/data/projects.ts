@@ -2,7 +2,7 @@ import type { Project } from "../types/projects"
 
 export const PROJECTS: Project[] = [
   {
-    id: "react-wheel-picker",
+    id: "PetalUI",
     title: "PetalUI",
     period: {
       start: "08.2025",
@@ -19,11 +19,11 @@ export const PROJECTS: Project[] = [
       "NPM Registry",
       "GitHub Actions",
     ],
-    description: `iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support. / Backed by [▲Vercel OSS Program](https://vercel.com/blog/summer-2025-oss-program#react-wheel-picker)
-- Natural touch scrolling with smooth inertia, mouse drag and scroll for desktop
-- Infinite loop scrolling
-- Unstyled core for complete style customization
-- Full keyboard navigation and type-ahead search
+    description: `PetalUI is a collection of polished React components designed to deliver native-like interactions and exceptional user experiences.
+- Delivers smooth, native-feeling interactions across modern web applications
+- Built with accessibility, flexibility, and performance as core principles
+- Provides developers with customizable components that integrate seamlessly into any design system
+- Designed to help teams build beautiful interfaces faster and more consistently
 `,
     logo: "/petalUI.png",
     isExpanded: true,
@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
       "Developer Experience",
     ],
     description:
-      "A pixel-perfect developer portfolio where elegant design meets seamless user experience",
+      "A pixel-perfect developer portfolio where elegant design meets seamless user experience.",
     logo: "/tv-logo.svg",
   },
   {
@@ -92,7 +92,7 @@ export const PROJECTS: Project[] = [
 - Inspired by Dynamic Island to enhance workflow and multitasking
 - Open-source project focused on improving the macOS desktop experience
 `,
-    logo: "https://assets.tusharvarshney.com/images/project-logos/zadark.svg",
+    logo: "/NotchOS.png",
   },
   {
     id: "qabox",
@@ -200,11 +200,10 @@ export const PROJECTS: Project[] = [
 - Pilot implemented in high schools across Can Tho City with English quizzes, supervised by English subject specialists from the Can Tho City Department of Education and Training`,
   },
   {
-    id: "dmessage",
-    title: "DMessage",
+    id: "liveCard",
+    title: "LiveCard",
     period: {
-      start: "05.2017",
-      end: "05.2017",
+      start: "04.2026",
     },
     link: "https://github.com/tusharvarshney/DMessage",
     skills: [
@@ -216,7 +215,8 @@ export const PROJECTS: Project[] = [
       "Mongoose ODM",
     ],
     description:
-      "A Messenger clone built to practice real-time communication using Socket.IO. This project showcases my self-learning journey in implementing WebSockets for instant messaging.",
+      "LiveCard turns your Linkedin profile into a dynamic, animated identity - going beyond boring banners to create a profile that actually moves, reacts, and stands out.",
+    logo: "/petalUI.png",
   },
   {
     id: "study-english",
