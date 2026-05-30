@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
 - Unstyled core for complete style customization
 - Full keyboard navigation and type-ahead search
 `,
-    logo: "https://assets.tusharvarshney.com/images/project-logos/react-wheel-picker.svg",
+    logo: "/petalUI.png",
     isExpanded: true,
   },
   {
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "A pixel-perfect developer portfolio where elegant design meets seamless user experience.",
-    logo: "https://assets.tusharvarshney.com/images/project-logos/tushardotcom.svg",
+    logo: "/tv-logo.svg",
   },
   {
     id: "quaricdotcom",
