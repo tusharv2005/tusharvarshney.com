@@ -216,7 +216,7 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "LiveCard turns your Linkedin profile into a dynamic, animated identity - going beyond boring banners to create a profile that actually moves, reacts, and stands out.",
-    logo: "/petalUI.png",
+    logo: "Livecard.png",
   },
   {
     id: "study-english",

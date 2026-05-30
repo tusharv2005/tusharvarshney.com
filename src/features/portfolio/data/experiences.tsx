@@ -91,18 +91,19 @@ Project: [AI Search & Schematic Search](https://zadark.com)
       //   skills: ["Business Ownership", "Business Law", "Business Tax"],
       // },
     ],
-    isCurrentEmployer: true,
+    // isCurrentEmployer: true,
   },
   {
     id: "snapchat",
     companyName: "Snap AR Independent Creator",
     companyLogo: "https://cdn.simpleicons.org/snapchat/FFFC00",
+    companyWebsite: "https://www.snapchat.com/@tusharv0003",
     positions: [
       {
         id: "2",
         title: "Lens Creator",
         employmentPeriod: {
-          start: "10.2025",
+          start: "9.2025",
         },
         employmentType: "Self-Employed",
         icon: <SparklesIcon />,
