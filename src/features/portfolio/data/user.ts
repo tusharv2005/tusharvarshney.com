@@ -39,7 +39,7 @@ export const USER: User = {
   about: `
 - AI Engineer and indie builder focused on creating AI-native software, developer tools, and interactive digital experiences with strong attention to execution.
 - Passionate about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
-- Creator of [horizngames.com](https://github.com/tusharvarshney/tusharvarshney.com) (1.8k stars), [React Wheel Picker](https://react-wheel-picker.tusharvarshney.com) (16k+ weekly downloads, ▲Vercel OSS Program), and [ZaDark](https://zadark.com) (80k+ downloads, 30k+ users) — peak metrics.
+- Creator of [horizngames.com](https://github.com/tusharvarshney/tusharvarshney.com) (1.8k stars), [ZCode.ai](https://react-wheel-picker.tusharvarshney.com) (16k+ weekly downloads, ▲Vercel OSS Program), and [PetalUI](https://zadark.com) (80k+ downloads, 30k+ users) — peak metrics.
 `,
   avatar: "https://assets.tusharvarshney.com/images/tushar-avatar-ghibli.webp",
   avatarVariants: {

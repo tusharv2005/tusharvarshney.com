@@ -3,6 +3,7 @@ import {
   DraftingCompassIcon,
   GraduationCapIcon,
   LightbulbIcon,
+  SparklesIcon,
 } from "lucide-react"
 
 import type { Experience } from "../types/experiences"
@@ -40,7 +41,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: "mahindra",
-    companyName: "Mahindra Group",
+    companyName: "Mahindra & Mahindra Group",
     companyLogo: "/images.png",
     companyWebsite: "//",
     positions: [
@@ -93,130 +94,125 @@ Project: [AI Search & Schematic Search](https://zadark.com)
     isCurrentEmployer: true,
   },
   {
-    id: "simplamo",
-    companyName: "Simplamo",
-    companyLogo:
-      "https://assets.tusharvarshney.com/images/companies/simplamo.webp",
+    id: "snapchat",
+    companyName: "Snap AR Independent Creator",
+    companyLogo: "https://cdn.simpleicons.org/snapchat/FFFC00",
     positions: [
       {
         id: "2",
-        title: "Senior Frontend Developer",
+        title: "Lens Creator",
         employmentPeriod: {
-          start: "10.2022",
-          end: "01.2026",
+          start: "10.2025",
         },
-        employmentType: "Full-time",
-        icon: <CodeXmlIcon />,
-        description: `- Built Tree & Gantt views features to improve goal organization, visibility, and progress tracking.
-- Developed [AI Chat](https://help.simplamo.com/features/simplamo-ai/ai-chat/guide_simplamo_ai_chat?ref=IN-926722) and [AI Assistant](https://help.simplamo.com/features/simplamo-ai/ai-expert/aiexpert-rockdiscribe?ref=IN-926722) features.
-- Developed [Whiteboards](https://help.simplamo.com/features/whiteboard/overview?ref=IN-926722) with real-time collaboration.
-- Built and maintained the [Zalo Mini App](https://zalo.me/s/1736112917405511258/) for Simplamo with seamless integration.
-- Developed interactive chart and analytics widgets for the [Dashboard](https://help.simplamo.com/features/dashboard/overview) to enhance data visualization.
-- Developed and maintained core features to enhance functionality and user experience.
-- Ensured UI/UX consistency and adherence to standards.
-- Implemented robust frontend solutions for web and mobile platforms.
-- Analyzed technical capabilities and provided optimal solutions.`,
+        employmentType: "Self-Employed",
+        icon: <SparklesIcon />,
+        description: `- Designed and published interactive AR lenses for Snapchat using Lens Studio.
+- Generated over 1.89M total reach across multiple lens experiences.
+- Achieved 2.96M+ lens plays through engaging and viral AR content.
+- Drove 33,524+ organic shares through highly engaging AR experiences.
+- Built multiple high-performing lenses, with top experiences reaching over 300K users individually.
+- Created face filters, visual effects, and immersive experiences for a global audience.
+- Leveraged analytics and user behavior insights to optimize reach and engagement.
+- Optimized lens performance, usability, and engagement through iterative design improvements.
+- Experimented with emerging AR technologies to build innovative social experiences.`,
         skills: [
-          "TypeScript",
-          "Next.js",
-          "React Native",
-          "MobX",
-          "MobX-State-Tree",
-          "Tailwind CSS",
-          "Dify",
-          "Zalo Mini App",
-          "Agile",
-          "Teamwork",
-          "Research",
-          "Problem-solving",
+          "Augmented Reality",
+          "Lens Studio",
+          "AR Experiences",
+          "Creative Technology",
+          "Viral Content",
+          "Audience Growth",
+          "Engagement Optimization",
+          "Digital Creativity",
         ],
       },
-      {
-        id: "1",
-        title: "UI Lead",
-        employmentPeriod: {
-          start: "10.2022",
-          end: "01.2026",
-        },
-        employmentType: "Full-time",
-        icon: <DraftingCompassIcon />,
-        description: `- Ensured UI/UX consistency and high-quality standards.
-- Designed intuitive, user-focused interfaces aligned with business goals.
-- Defined and established a cohesive UI style for Simplamo.`,
-        skills: ["Creativity", "UI/UX Design", "Figma"],
-      },
+      //       {
+      //         id: "1",
+      //         title: "UI Lead",
+      //         employmentPeriod: {
+      //           start: "10.2022",
+      //           end: "01.2026",
+      //         },
+      //         employmentType: "Full-time",
+      //         icon: <DraftingCompassIcon />,
+      //         description: `- Ensured UI/UX consistency and high-quality standards.
+      // - Designed intuitive, user-focused interfaces aligned with business goals.
+      // - Defined and established a cohesive UI style for Simplamo.`,
+      //         skills: ["Creativity", "UI/UX Design", "Figma"],
+      //       },
     ],
+    isCurrentEmployer: true,
   },
-  {
-    id: "tungtung",
-    companyName: "Tung Tung",
-    companyLogo:
-      "https://assets.tusharvarshney.com/images/companies/tungtung.webp",
-    positions: [
-      {
-        id: "3",
-        title: "Web Developer",
-        employmentPeriod: {
-          start: "2020",
-          end: "2022",
-        },
-        employmentType: "Full-time",
-        description: `- Built a scalable design system for consistency and efficiency.
-- Built a complex rich-text editor based on ProseMirror and Slate for customizable content creation.
-- Integrated APIs with the Backend Team to enhance functionality.`,
-        icon: <CodeXmlIcon />,
-        skills: [
-          "React",
-          "Redux",
-          "Storybook",
-          "Lerna",
-          "Agile",
-          "Teamwork",
-          "Research",
-        ],
-      },
-      {
-        id: "2",
-        title: "Mobile Developer",
-        employmentPeriod: {
-          start: "2019",
-          end: "2020",
-        },
-        employmentType: "Full-time",
-        description: `- Rebuilt the app with React Native for better UX and performance.
-- Integrated MoMo and in-app purchases for seamless payments.
-- Optimized deployment for staging and production.
-- Published on App Store and Google Play, ensuring compliance.`,
-        icon: <CodeXmlIcon />,
-        skills: [
-          "React Native",
-          "Redux",
-          "MoMo Payment API",
-          "App Store",
-          "Google Play Store",
-          "App Center",
-          "Agile",
-          "Teamwork",
-          "Research",
-        ],
-      },
-      {
-        id: "1",
-        title: "UI/UX Designer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2019",
-        },
-        employmentType: "Full-time",
-        description: `- Designed a Landing Page for enterprise clients.
-- Redesigned the Online Quiz Platform for a modern look on web and mobile.
-- Redesigned the Pricing interface for individual customers.
-- Enhanced UX by improving usability, navigation, and user flow.`,
-        icon: <DraftingCompassIcon />,
-        skills: ["UI/UX Design", "Sketch"],
-      },
-    ],
-  },
+  //   {
+  //     id: "tungtung",
+  //     companyName: "Tung Tung",
+  //     companyLogo:
+  //       "https://assets.tusharvarshney.com/images/companies/tungtung.webp",
+  //     positions: [
+  //       {
+  //         id: "3",
+  //         title: "Web Developer",
+  //         employmentPeriod: {
+  //           start: "2020",
+  //           end: "2022",
+  //         },
+  //         employmentType: "Full-time",
+  //         description: `- Built a scalable design system for consistency and efficiency.
+  // - Built a complex rich-text editor based on ProseMirror and Slate for customizable content creation.
+  // - Integrated APIs with the Backend Team to enhance functionality.`,
+  //         icon: <CodeXmlIcon />,
+  //         skills: [
+  //           "React",
+  //           "Redux",
+  //           "Storybook",
+  //           "Lerna",
+  //           "Agile",
+  //           "Teamwork",
+  //           "Research",
+  //         ],
+  //       },
+  //       {
+  //         id: "2",
+  //         title: "Mobile Developer",
+  //         employmentPeriod: {
+  //           start: "2019",
+  //           end: "2020",
+  //         },
+  //         employmentType: "Full-time",
+  //         description: `- Rebuilt the app with React Native for better UX and performance.
+  // - Integrated MoMo and in-app purchases for seamless payments.
+  // - Optimized deployment for staging and production.
+  // - Published on App Store and Google Play, ensuring compliance.`,
+  //         icon: <CodeXmlIcon />,
+  //         skills: [
+  //           "React Native",
+  //           "Redux",
+  //           "MoMo Payment API",
+  //           "App Store",
+  //           "Google Play Store",
+  //           "App Center",
+  //           "Agile",
+  //           "Teamwork",
+  //           "Research",
+  //         ],
+  //       },
+  //       {
+  //         id: "1",
+  //         title: "UI/UX Designer",
+  //         employmentPeriod: {
+  //           start: "2018",
+  //           end: "2019",
+  //         },
+  //         employmentType: "Full-time",
+  //         description: `- Designed a Landing Page for enterprise clients.
+  // - Redesigned the Online Quiz Platform for a modern look on web and mobile.
+  // - Redesigned the Pricing interface for individual customers.
+  // - Enhanced UX by improving usability, navigation, and user flow.`,
+  //         icon: <DraftingCompassIcon />,
+  //         skills: ["UI/UX Design", "Sketch"],
+  //       },
+  //     ],
+  //   },
   {
     id: "freelance",
     companyName: "Freelance",
