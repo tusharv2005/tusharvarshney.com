@@ -37,17 +37,13 @@ export const PROJECTS: Project[] = [
     link: "https://github.com/tusharv2005/tusharvarshney.me",
     skills: [
       "Open Source",
-      "Next.js 16",
-      "Tailwind CSS v4",
-      "Radix UI",
-      "Base UI",
-      "Motion",
-      "shadcn/ui",
-      "shadcn registry",
-      "Vercel",
+      "Portfolio Design",
+      "Interactive Experiences",
+      "Frontend Architecture",
+      "Developer Experience",
     ],
     description:
-      "A pixel-perfect developer portfolio where elegant design meets seamless user experience.",
+      "A pixel-perfect developer portfolio where elegant design meets seamless user experience",
     logo: "/tv-logo.svg",
   },
   {
@@ -58,16 +54,22 @@ export const PROJECTS: Project[] = [
     },
     link: "https://zode.ai",
     skills: [
-      "Company Project",
-      "Next.js 15",
-      "Tailwind CSS v3",
-      "shadcn/ui",
-      "Strapi 5",
-      "VNPAY-QR",
-      "Docker",
-      "Docker Compose",
-      "NGINX",
+      "Agentic Engineering",
+      "Coding Agents",
+      "Multi-File Editing",
+      "Code Intelligence",
+      "AI Automation",
+      "Context Awareness",
+      "Workflow Orchestration",
+      "Developer Experience",
+      "SaaS",
     ],
+    description: `Zode is a modern AI-powered engineering platform. Design, develop, and deliver exceptional software faster with intelligent automation built for developers.
+- Intelligent coding agents automate repetitive and complex development tasks
+- Provides context-aware code intelligence across large codebases
+- Supports multi-file editing and orchestrated AI-driven workflows
+- Built to deliver a faster and more intuitive developer experience
+`,
     logo: "/ZODE.png",
   },
   {
@@ -78,19 +80,17 @@ export const PROJECTS: Project[] = [
     },
     link: "https://zadark.com",
     skills: [
-      "Pet Project",
+      "Product Engineering",
       "Open Source",
-      "Browser Extension",
-      "CLI",
-      "Docusaurus 3",
+      "macOS",
+      "SwiftUI",
+      "Productivity",
     ],
-    description: `ZaDark adds Dark Mode, anti-peeking, customizable fonts, backgrounds, and more to Zalo Web and PC.
-- Earned 10M+ VND in net sales from a paid Safari Extension*
-- 80k+ downloads on SourceForge* (awarded Community Leader badge by SourceForge)
-- 30k+ active users via Chrome Web Store*
-- Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
-
-<p class="text-muted-foreground">* Peak metrics.</p>
+    description: `NotchOS transforms the MacBook notch into a powerful productivity hub with media controls, file management, widgets, and system utilities.
+- Native macOS application built with SwiftUI and modern Apple frameworks
+- Features music controls, file shelf, battery monitoring, and calendar integration
+- Inspired by Dynamic Island to enhance workflow and multitasking
+- Open-source project focused on improving the macOS desktop experience
 `,
     logo: "https://assets.tusharvarshney.com/images/project-logos/zadark.svg",
   },

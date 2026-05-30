@@ -51,7 +51,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     href: "https://www.instagram.com/thetusharvarshney",
   },
   //   {
-  //   title: "Spotify",
+  //   title: "Discord",
   //   handle: "Your Playlist Name",
   //   icon: "https://cdn.simpleicons.org/spotify/1DB954",
   //   link: "https://open.spotify.com/playlist/YOUR_PLAYLIST_ID",
