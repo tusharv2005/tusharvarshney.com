@@ -5,7 +5,7 @@ export const PROJECTS: Project[] = [
     id: "react-wheel-picker",
     title: "PetalUI",
     period: {
-      start: "03.2026",
+      start: "08.2025",
     },
     link: "https://react-wheel-picker.tusharvarshney.com",
     skills: [
@@ -51,12 +51,12 @@ export const PROJECTS: Project[] = [
     logo: "/tv-logo.svg",
   },
   {
-    id: "quaricdotcom",
-    title: "quaric.com",
+    id: "zode.ai",
+    title: "zode.ai",
     period: {
-      start: "03.2024",
+      start: "03.2026",
     },
-    link: "https://quaric.com",
+    link: "https://zode.ai",
     skills: [
       "Company Project",
       "Next.js 15",
@@ -68,13 +68,13 @@ export const PROJECTS: Project[] = [
       "Docker Compose",
       "NGINX",
     ],
-    logo: "https://assets.tusharvarshney.com/images/project-logos/quaricdotcom.svg",
+    logo: "/ZODE.png",
   },
   {
-    id: "zadark",
-    title: "ZaDark",
+    id: "NotchOS",
+    title: "NotchOS",
     period: {
-      start: "01.2022",
+      start: "10.2025",
     },
     link: "https://zadark.com",
     skills: [
