@@ -36,14 +36,14 @@ const fontNameGujarati = Noto_Sans_Gujarati({
 })
 
 const fontNameJapanese = Yuji_Syuku({
-  subsets: ["japanese"],
+  subsets: ["latin"],
   weight: ["400"],
   preload: false,
   variable: "--font-name-japanese",
 })
 
 const fontNameKorean = Nanum_Brush_Script({
-  subsets: ["korean"],
+  subsets: ["latin"],
   weight: ["400"],
   preload: false,
   variable: "--font-name-korean",
