@@ -6,7 +6,6 @@ import { Button } from "@/components/base/ui/button"
 import { RemountOnThemeChange } from "@/components/remount-on-theme-change"
 import { VCardQR } from "@/components/vcard-qr"
 import { VisitorCounter } from "@/components/visitor-counter"
-import { getDocsByCategory } from "@/features/doc/data/documents"
 import { cn } from "@/lib/utils"
 import AppleHelloEffectAllDemo from "@/registry/examples/apple-hello-effect-languages-demo"
 import ElasticSliderDemo from "@/registry/examples/elastic-slider-demo"
@@ -20,18 +19,13 @@ import ThemeToggleEffectDemo from "@/registry/examples/theme-toggle-effect-demo/
 import TwemojiDemo from "@/registry/examples/twemoji-demo"
 import WheelPickerDemo from "@/registry/examples/wheel-picker-demo"
 
-import { Panel, PanelHeader, PanelTitle, PanelTitleSup } from "./panel"
+import { Panel, PanelHeader, PanelTitle } from "./panel"
 
 export function ComponentsShowcase() {
-  const components = getDocsByCategory("components")
-
   return (
-    <Panel>
+    <Panel id="showcase">
       <PanelHeader>
-        <PanelTitle>
-          Components
-          <PanelTitleSup>({components.length})</PanelTitleSup>
-        </PanelTitle>
+        <PanelTitle>Showcase</PanelTitle>
       </PanelHeader>
 
       <div className="grid grid-cols-1 gap-1 p-1 md:grid-cols-3">
