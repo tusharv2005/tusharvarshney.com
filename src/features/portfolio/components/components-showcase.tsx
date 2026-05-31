@@ -3,6 +3,7 @@ import Link from "next/link"
 
 import { ARLensGallery } from "@/components/ar-lens-gallery"
 import { Button } from "@/components/base/ui/button"
+import { CurrentlyBuilding } from "@/components/currently-building"
 import { RemountOnThemeChange } from "@/components/remount-on-theme-change"
 import { VCardQR } from "@/components/vcard-qr"
 import { VisitorCounter } from "@/components/visitor-counter"
@@ -14,7 +15,6 @@ import ShimmeringTextDemo2 from "@/registry/examples/shimmering-text-demo-02"
 import SlideToUnlockDemo1 from "@/registry/examples/slide-to-unlock-demo-01"
 import TestimonialSpotlightDemo from "@/registry/examples/testimonial-spotlight-demo-01"
 import TextFlipDemo from "@/registry/examples/text-flip-demo"
-import ThemeSwitcherDemo from "@/registry/examples/theme-switcher-demo"
 import ThemeToggleEffectDemo from "@/registry/examples/theme-toggle-effect-demo/theme-toggle-effect-demo"
 import TwemojiDemo from "@/registry/examples/twemoji-demo"
 import WheelPickerDemo from "@/registry/examples/wheel-picker-demo"
@@ -40,7 +40,7 @@ export function ComponentsShowcase() {
         </GridItem>
 
         <GridItem>
-          <ThemeSwitcherDemo />
+          <CurrentlyBuilding />
         </GridItem>
 
         <GridItem className="md:row-span-2">

@@ -17,27 +17,21 @@ export function VisitorCounter({
   const hasFetched = useRef(false)
 
   useEffect(() => {
-    // Guard against double-invocation in React Strict Mode (dev).
+    // Dedupe in React Strict Mode (dev) so we only count the hit once.
     if (hasFetched.current) return
     hasFetched.current = true
-
-    let cancelled = false
 
     fetch(COUNTER_ENDPOINT)
       .then((res) => res.json())
       .then((data: unknown) => {
         const value = (data as { value?: number })?.value
-        if (!cancelled && typeof value === "number") {
+        if (typeof value === "number") {
           setCount(value)
         }
       })
       .catch(() => {
         // Silently ignore network errors.
       })
-
-    return () => {
-      cancelled = true
-    }
   }, [])
 
   return (
