@@ -116,6 +116,14 @@
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
   --font-pixel: var(--font-pixel);
+  --font-script: var(--font-script);
+  --font-name-bitcount: var(--font-name-bitcount);
+  --font-name-latin: var(--font-name-bitcount);
+  --font-name-hindi: var(--font-name-hindi);
+  --font-name-gujarati: var(--font-name-gujarati);
+  --font-name-japanese: var(--font-name-japanese);
+  --font-name-korean: var(--font-name-korean);
+  --font-name-thai: var(--font-name-thai);
   --font-pixel-square: var(--font-geist-pixel-square);
   --font-heading: var(--font-sans);
 
