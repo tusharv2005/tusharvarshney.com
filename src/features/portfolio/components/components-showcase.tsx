@@ -7,13 +7,13 @@ import { CurrentlyBuilding } from "@/components/currently-building"
 import { PlayerGlobe } from "@/components/player-globe"
 import { ReachStats } from "@/components/reach-stats"
 import { RemountOnThemeChange } from "@/components/remount-on-theme-change"
+import { SecretMessage } from "@/components/secret-message"
 import { VCardQR } from "@/components/vcard-qr"
 import { VisitorCounter } from "@/components/visitor-counter"
 import { ZodeTerminal } from "@/components/zode-terminal"
 import { cn } from "@/lib/utils"
 import AppleHelloEffectAllDemo from "@/registry/examples/apple-hello-effect-languages-demo"
 import GitHubContributionsDemo1 from "@/registry/examples/github-contributions-demo-01"
-import SlideToUnlockDemo1 from "@/registry/examples/slide-to-unlock-demo-01"
 import TestimonialSpotlightDemo from "@/registry/examples/testimonial-spotlight-demo-01"
 import TextFlipDemo from "@/registry/examples/text-flip-demo"
 import ThemeToggleEffectDemo from "@/registry/examples/theme-toggle-effect-demo/theme-toggle-effect-demo"
@@ -35,7 +35,7 @@ export function ComponentsShowcase() {
 
         <GridItem>
           <RemountOnThemeChange>
-            <SlideToUnlockDemo1 />
+            <SecretMessage />
           </RemountOnThemeChange>
         </GridItem>
 
