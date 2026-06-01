@@ -4,6 +4,8 @@ import { RotateCcwIcon } from "lucide-react"
 import { AnimatePresence, motion } from "motion/react"
 import { useState } from "react"
 
+import { useSound as useSoundAsset } from "@/hooks/soundcn/use-sound"
+import { uMiniMapOpenSound } from "@/lib/soundcn/u-mini-map-open"
 import { cn } from "@/lib/utils"
 import { ShimmeringText } from "@/registry/components/shimmering-text"
 import {
@@ -30,6 +32,8 @@ export function SecretMessage({
     "https://assets.tusharvarshney.com/sounds/ios/unlock.mp3",
     { volume: 0.5 }
   )
+  // A soft, airy chime the moment the handle is grabbed.
+  const [playSlide] = useSoundAsset(uMiniMapOpenSound, { volume: 0.25 })
 
   return (
     <div
@@ -60,7 +64,7 @@ export function SecretMessage({
                     />
                   )}
                 </SlideToUnlockText>
-                <SlideToUnlockHandle />
+                <SlideToUnlockHandle onPointerDown={() => playSlide()} />
               </SlideToUnlockTrack>
             </SlideToUnlock>
           </motion.div>
