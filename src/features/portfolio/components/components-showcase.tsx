@@ -9,6 +9,7 @@ import { ReachStats } from "@/components/reach-stats"
 import { RemountOnThemeChange } from "@/components/remount-on-theme-change"
 import { VCardQR } from "@/components/vcard-qr"
 import { VisitorCounter } from "@/components/visitor-counter"
+import { ZodeTerminal } from "@/components/zode-terminal"
 import { cn } from "@/lib/utils"
 import AppleHelloEffectAllDemo from "@/registry/examples/apple-hello-effect-languages-demo"
 import GitHubContributionsDemo1 from "@/registry/examples/github-contributions-demo-01"
@@ -17,7 +18,6 @@ import TestimonialSpotlightDemo from "@/registry/examples/testimonial-spotlight-
 import TextFlipDemo from "@/registry/examples/text-flip-demo"
 import ThemeToggleEffectDemo from "@/registry/examples/theme-toggle-effect-demo/theme-toggle-effect-demo"
 import TwemojiDemo from "@/registry/examples/twemoji-demo"
-import WheelPickerDemo from "@/registry/examples/wheel-picker-demo"
 
 import { Panel, PanelHeader, PanelTitle } from "./panel"
 
@@ -53,8 +53,8 @@ export function ComponentsShowcase() {
           </div>
         </GridItem>
 
-        <GridItem className="**:data-rwp-wrapper:rounded-xl md:row-span-2">
-          <WheelPickerDemo />
+        <GridItem className="md:row-span-2">
+          <ZodeTerminal />
         </GridItem>
 
         <GridItem className="md:row-span-2">
