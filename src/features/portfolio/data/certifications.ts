@@ -11,6 +11,15 @@ export const CERTIFICATIONS: Certification[] = [
       "https://www.credly.com/badges/5be48acf-1c56-4266-bc65-5c17ad828b0f",
   },
   {
+    title: "JPMorganChase - Investment Banking Job Simulation",
+    issuer: "Forage",
+    issuerLogoURL: "/logo-jpmorganchase.png",
+    issueDate: "2026-02-14",
+    credentialID: "NnNvzWzmEzkTtx3fj",
+    credentialURL:
+      "https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/YD2kY95RQxQtXxFTS_Sj7temL583QAYpHXD_kkjYPCrgsMuSrmGbB_1771082083547_completion_certificate.pdf",
+  },
+  {
     title: "Gemini Certified Educator",
     issuer: "Google for Education",
     issuerIconName: "google",
@@ -62,6 +71,15 @@ export const CERTIFICATIONS: Certification[] = [
     credentialID: "react-foundations-47463-1745634245158",
     credentialURL:
       "https://nextjs.org/learn/certificate?course=react-foundations&user=47463&certId=react-foundations-47463-1745634245158",
+  },
+  {
+    title: "Bloomberg Market Concepts",
+    issuer: "Bloomberg for Education",
+    issuerLogoURL: "/logo-bloomberg.png",
+    issueDate: "2025-01-14",
+    credentialID: "89mgHBYnngW1FBUzwxYExSpE",
+    credentialURL:
+      "https://portal.bloombergforeducation.com/certificates/89mgHBYnngW1FBUzwxYExSpE",
   },
   {
     title: "Certificate of Copyright Registration No. 0040/2025/QTG",
