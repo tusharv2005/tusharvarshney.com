@@ -56,26 +56,26 @@ export function VCardQR({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       className={cn(
-        "flex flex-col items-center justify-center gap-3 text-center select-none",
+        "flex size-full flex-col items-center justify-center gap-4 text-center select-none",
         className
       )}
       {...props}
     >
-      <div className="rounded-xl border border-line bg-background p-2.5">
+      <div className="rounded-2xl border border-line bg-background p-3 shadow-sm transition-colors hover:border-border retina:border-[0.5px]">
         {dataUrl ? (
           <img
             src={dataUrl}
             alt="QR code to save Tushar Varshney's contact card"
-            className="size-28 sm:size-32"
-            width={128}
-            height={128}
+            className="size-40 sm:size-44"
+            width={176}
+            height={176}
           />
         ) : (
-          <div className="size-28 animate-pulse rounded-md bg-muted sm:size-32" />
+          <div className="size-40 animate-pulse rounded-lg bg-muted sm:size-44" />
         )}
       </div>
 
-      <div className="space-y-0.5">
+      <div className="space-y-1">
         <p className="text-sm font-medium text-foreground">
           Scan to save my contact
         </p>
