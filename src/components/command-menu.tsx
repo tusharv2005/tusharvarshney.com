@@ -67,16 +67,10 @@ const MENU_LINKS: CommandLinkItem[] = [
     shortcut: "GH",
   },
   {
-    title: "Components",
-    href: "/components",
+    title: "Showcase",
+    href: "/#showcase",
     icon: <Icons.react />,
     shortcut: "GC",
-  },
-  {
-    title: "Blocks",
-    href: "/blocks",
-    icon: <Icons.gridView />,
-    shortcut: "GB",
   },
   {
     title: "Blog",
@@ -171,11 +165,10 @@ type BlockItem = {
 
 export function CommandMenu({
   docs,
-  blocks,
   enabledHotkeys = false,
 }: {
   docs: DocPreview[]
-  blocks: BlockItem[]
+  blocks?: BlockItem[]
   enabledHotkeys?: boolean
 }) {
   const router = useRouter()
@@ -265,31 +258,12 @@ export function CommandMenu({
     [click, setTheme]
   )
 
-  const { componentLinks, blogLinks } = useMemo(
-    () => ({
-      componentLinks: docs
-        .filter((doc) => doc.category === "components")
-        .sort((a, b) =>
-          a.title.localeCompare(b.title, "en", {
-            sensitivity: "base",
-          })
-        )
-        .map(docToCommandLinkItem),
-      blogLinks: docs
+  const blogLinks = useMemo(
+    () =>
+      docs
         .filter((doc) => doc.category !== "components")
         .map(docToCommandLinkItem),
-    }),
     [docs]
-  )
-
-  const blockLinks = useMemo(
-    () =>
-      blocks.map((block) => ({
-        title: block.name,
-        href: `/blocks/${block.categories[0]}/${block.name}`,
-        keywords: ["block"],
-      })),
-    [blocks]
   )
 
   return (
@@ -321,20 +295,6 @@ export function CommandMenu({
           <CommandLinkGroup
             heading="Portfolio"
             links={PORTFOLIO_LINKS}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandLinkGroup
-            heading="Components"
-            links={componentLinks}
-            fallbackIcon={<Icons.react />}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandLinkGroup
-            heading="Blocks"
-            links={blockLinks}
-            fallbackIcon={<Icons.gridView />}
             onLinkSelect={handleOpenLink}
           />
 

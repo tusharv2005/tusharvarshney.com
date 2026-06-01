@@ -15,7 +15,7 @@ type BuildingItem = {
 const BUILDING: BuildingItem[] = [
   {
     text: "a new game for Horizn Games 👨‍💻",
-    href: "/Enhancer-AI UHD-IMG_5249.jpeg",
+    href: "/puzzlegame.jpeg",
   },
   { text: "more AR lenses for Snapchat ✨" },
   { text: "more content for the feed 🤙" },
