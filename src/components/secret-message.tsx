@@ -33,7 +33,7 @@ export function SecretMessage({
     { volume: 0.5 }
   )
   // A soft, airy chime the moment the handle is grabbed.
-  const [playSlide] = useSoundAsset(uMiniMapOpenSound, { volume: 0.25 })
+  const [playSlide] = useSoundAsset(uMiniMapOpenSound, { volume: 0.12 })
 
   return (
     <div
