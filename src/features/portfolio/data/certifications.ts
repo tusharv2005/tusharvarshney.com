@@ -2,6 +2,15 @@ import type { Certification } from "../types/certifications"
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    title: "AWS Academy Graduate - Cloud Architecting",
+    issuer: "Amazon Web Services Training and Certification",
+    issuerLogoURL: "/aws-academy-cloud-architecting.png",
+    issueDate: "2026-04-03",
+    credentialID: "5be48acf-1c56-4266-bc65-5c17ad828b0f",
+    credentialURL:
+      "https://www.credly.com/badges/5be48acf-1c56-4266-bc65-5c17ad828b0f",
+  },
+  {
     title: "Gemini Certified Educator",
     issuer: "Google for Education",
     issuerIconName: "google",
@@ -26,14 +35,6 @@ export const CERTIFICATIONS: Certification[] = [
     credentialID: "565092",
     credentialURL:
       "https://drive.google.com/file/d/1NgRp81ZAAUKEtuI9RefG0e8yni6JkoE8/view?usp=sharing",
-  },
-  {
-    title: "Certificate of Trademark Registration No. 543682",
-    issuer: "Intellectual Property Office of Viet Nam",
-    issueDate: "2025-05-08",
-    credentialID: "543682",
-    credentialURL:
-      "https://drive.google.com/file/d/1x7YzlK1kyz16h28ux9k3KAwnZFAabsvq/view?usp=sharing",
   },
   {
     title: "Next.js SEO Fundamentals",
