@@ -30,7 +30,7 @@ export function SecretMessage({
   const [unlocked, setUnlocked] = useState(false)
   const [play] = useSound(
     "https://assets.tusharvarshney.com/sounds/ios/unlock.mp3",
-    { volume: 0.5 }
+    { volume: 0.001 }
   )
   // A soft, airy chime the moment the handle is grabbed.
   const [playSlide] = useSoundAsset(uMiniMapOpenSound, { volume: 0.12 })

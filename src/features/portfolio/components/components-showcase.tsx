@@ -1,5 +1,6 @@
 import { ARLensGallery } from "@/components/ar-lens-gallery"
 import { CurrentlyBuilding } from "@/components/currently-building"
+import { KrishnaTestimonial } from "@/components/krishna-testimonial"
 import { PlayerGlobe } from "@/components/player-globe"
 import { ReachStats } from "@/components/reach-stats"
 import { RemountOnThemeChange } from "@/components/remount-on-theme-change"
@@ -10,7 +11,6 @@ import { ZodeTerminal } from "@/components/zode-terminal"
 import { cn } from "@/lib/utils"
 import AppleHelloEffectAllDemo from "@/registry/examples/apple-hello-effect-languages-demo"
 import GitHubContributionsDemo1 from "@/registry/examples/github-contributions-demo-01"
-import TestimonialSpotlightDemo from "@/registry/examples/testimonial-spotlight-demo-01"
 import TextFlipDemo from "@/registry/examples/text-flip-demo"
 import ThemeToggleEffectDemo from "@/registry/examples/theme-toggle-effect-demo/theme-toggle-effect-demo"
 import TwemojiDemo from "@/registry/examples/twemoji-demo"
@@ -58,7 +58,7 @@ export function ComponentsShowcase() {
         </GridItem>
 
         <GridItem>
-          <TestimonialSpotlightDemo />
+          <KrishnaTestimonial />
         </GridItem>
 
         <GridItem className="p-0 md:col-span-2 md:row-span-2">
