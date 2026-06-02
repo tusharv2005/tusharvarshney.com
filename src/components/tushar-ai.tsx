@@ -43,7 +43,7 @@ const QA_LIST: QA[] = [
   },
   {
     q: "Coffee or tea?",
-    a: "Neither — I run on love for what I build ❤️",
+    a: "Neither — I run on the love I receive ❤️",
   },
   {
     q: "Can we collaborate?",
