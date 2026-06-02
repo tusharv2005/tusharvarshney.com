@@ -27,7 +27,7 @@ export const TESTIMONIALS_1: Testimonial[] = [
     authorTagline: "Creator of patterncraft.fun",
     url: "https://x.com/meghtrix/status/2017658774530781471",
     quote:
-      "The best looking website I’ve ever seen? @tusharvarshney portfolio!",
+      "The best looking website I've ever seen? @tusharvarshney portfolio!",
     date: "2026-02-01",
   },
   {
@@ -35,7 +35,7 @@ export const TESTIMONIALS_1: Testimonial[] = [
     authorName: "shadcncraft",
     authorTagline: "shadcncraft.com",
     url: "https://x.com/shadcncraft/status/2017091317244055988",
-    quote: "Love your work Tushar! You’re a great talent :-)",
+    quote: "Love your work Tushar! You're a great talent :-)",
     date: "2026-01-30",
     isVerified: true,
     order: 6,
@@ -45,7 +45,7 @@ export const TESTIMONIALS_1: Testimonial[] = [
     authorName: "Kartikey",
     authorTagline: "Engineer",
     url: "https://x.com/KartikeyStack/status/2016717957938974963",
-    quote: "best portfolio I’ve ever seen, minimal, clean and sick 🙌🏼",
+    quote: "best portfolio I've ever seen, minimal, clean and sick 🙌🏼",
     date: "2026-01-29",
     isVerified: true,
   },
@@ -103,7 +103,7 @@ export const TESTIMONIALS_1: Testimonial[] = [
     authorTagline: "Creator of tweakcn.com",
     url: "https://x.com/iamsahaj_xyz/status/1982814244501381239",
     quote:
-      "remember seeing it on @mannupaaji’s review. it’s one of the best looking ones I’ve seen",
+      "remember seeing it on @mannupaaji's review. it's one of the best looking ones I've seen",
     date: "2025-10-27",
     isVerified: true,
   },
@@ -113,7 +113,7 @@ export const TESTIMONIALS_1: Testimonial[] = [
     authorTagline: "Creator of 8bitcn.com",
     url: "https://x.com/orcdev/status/1980378575170859446",
     quote:
-      "Seriously, this is one of the best portfolio templates I’ve ever seen.",
+      "Seriously, this is one of the best portfolio templates I've ever seen.",
     date: "2025-10-21",
     isVerified: true,
   },
@@ -163,9 +163,37 @@ export const TESTIMONIALS_1: Testimonial[] = [
     authorTagline: "Followed by @github",
     url: "https://x.com/GithubProjects/status/1931034244337271044",
     quote:
-      "Everything you’d want in a picker, minus the styling headaches. Awesome job!",
+      "Everything you'd want in a picker, minus the styling headaches. Awesome job!",
     date: "2025-06-07",
     isVerified: true,
+  },
+  {
+    authorName: "Vinayak",
+    authorTagline: "Snapchat User",
+    authorAvatar: "/IMG_5327.jpg",
+    url: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=7c0def47945648e2be326c1450a9783d&metadata=01",
+    quote:
+      "This is an amazing lens! The effects are so smooth and creative. Love using it!",
+    date: "2026-01-15",
+  },
+  {
+    authorName: "Hem Mistry",
+    authorTagline: "Google Play User",
+    authorAvatar:
+      "https://ui-avatars.com/api/?name=Hem+Mistry&background=random",
+    url: "https://play.google.com/store/apps/details?id=com.zode.app",
+    quote:
+      "it's a great game and the best thing is the adds don't pop up like other games",
+    date: "2026-03-01",
+  },
+  {
+    authorName: "Pratham Sangurdekar",
+    authorTagline: "Google Play User",
+    authorAvatar:
+      "https://ui-avatars.com/api/?name=Pratham+Sangurdekar&background=random",
+    url: "https://play.google.com/store/apps/details?id=com.zode.app",
+    quote: "Extremely addictive and fun",
+    date: "2026-02-14",
   },
 ]
 
@@ -254,11 +282,11 @@ export const TESTIMONIALS_2: Testimonial[] = [
     isVerified: true,
   },
   {
-    authorAvatar: "https://unavatar.io/x/shadcn",
-    authorName: "shadcn",
-    authorTagline: "Creator of shadcn/ui",
-    url: "https://x.com/shadcn/status/2032193591133495700",
-    quote: "You’re doing amazing work.",
+    authorAvatar: "/krishna.jpg",
+    authorName: "Krishna",
+    authorTagline: "Creator of the Universe",
+    url: "#",
+    quote: "Do your work with all your heart, and leave the rest to me.",
     date: "2026-03-13",
     isVerified: true,
     isFeatured: true,
@@ -287,7 +315,7 @@ export const TESTIMONIALS_2: Testimonial[] = [
     authorName: "David Haz",
     authorTagline: "Creator of pro.reactbits.dev",
     url: "https://x.com/davidhdev/status/2025902761926132112",
-    quote: "That’s so cool 😭",
+    quote: "That's so cool 😭",
     date: "2026-02-23",
     isVerified: true,
   },
@@ -368,7 +396,7 @@ export const TESTIMONIALS_2: Testimonial[] = [
     authorName: "Yonaries",
     authorTagline: "Making orabrowser.com",
     url: "https://x.com/YonathanDejene/status/1984529637309886639",
-    quote: "incredible portfolio i’ve seen by far",
+    quote: "incredible portfolio i've seen by far",
     date: "2025-11-01",
     isVerified: true,
   },
@@ -416,5 +444,29 @@ export const TESTIMONIALS_2: Testimonial[] = [
     quote: "i like your style! :)",
     date: "2025-05-18",
     isVerified: true,
+  },
+  {
+    authorName: "Grae",
+    authorTagline: "Threads User",
+    authorAvatar: "/threads.png",
+    url: "https://www.threads.com/@grae1512/post/DB27q6RCsUm",
+    quote: "Amazing work! Love the creativity 🔥",
+    date: "2026-02-20",
+  },
+  {
+    authorName: "SimpleMemo",
+    authorTagline: "Bluesky User",
+    authorAvatar: "/bluesky.png",
+    url: "https://bsky.app/profile/simplememo.bsky.social/post/3mjsaloolf22d",
+    quote: "This is brilliant! 💙",
+    date: "2026-02-18",
+  },
+  {
+    authorName: "Instagram User",
+    authorTagline: "Instagram Community",
+    authorAvatar: "/instapic.png",
+    url: "https://www.instagram.com/reel/DYAXgnvT7Hd/?comment_id=18030031685800924",
+    quote: "So creative and well-executed! ❤️",
+    date: "2026-02-10",
   },
 ]
