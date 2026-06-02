@@ -29,6 +29,30 @@ const QA_LIST: QA[] = [
     q: "What can you do?",
     a: "Ship products end to end — AI, games, web, and content that reaches millions.",
   },
+  {
+    q: 'Why "Horizn Games"?',
+    a: "I wanted to build games that reach players everywhere.",
+  },
+  {
+    q: "What's your tech stack?",
+    a: "TypeScript, Next.js, React, Python, and a lot of AI APIs.",
+  },
+  {
+    q: "What's Zode?",
+    a: "An open-source AI coding agent for VS Code, JetBrains, and the terminal.",
+  },
+  {
+    q: "Coffee or tea?",
+    a: "Neither — I run on love for what I build ❤️",
+  },
+  {
+    q: "Can we collaborate?",
+    a: "Yes — I love teaming up on ambitious ideas. Let's talk.",
+  },
+  {
+    q: "How do I reach you?",
+    a: "Tap any social link below — or scan my QR to save my contact.",
+  },
 ]
 
 const TYPE_SPEED = 26
