@@ -89,13 +89,13 @@ export const BOOKMARKS: Bookmark[] = [
   },
 
   // Content Creation
-  {
-    title: "YouTube Certified Courses",
-    url: "https://support.google.com/youtube/answer/7380223",
-    author: "YouTube",
-    icon: <Video />,
-    bookmarkedAt: "2023-06-15",
-  },
+  // {
+  //   title: "YouTube Certified Courses",
+  //   url: "https://support.google.com/youtube/answer/7380223",
+  //   author: "YouTube",
+  //   icon: <Video />,
+  //   bookmarkedAt: "2023-06-15",
+  // },
   {
     title: "Hook Point by Brendan Kane",
     url: "https://brendanjkane.com/hook-point-book",

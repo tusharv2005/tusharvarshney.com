@@ -95,42 +95,46 @@ export const PROJECTS: Project[] = [
 `,
     logo: "/NotchOS.png",
   },
-  {
-    id: "qabox",
-    title: "QABox",
-    period: {
-      start: "07.2023",
-      end: "07.2023",
-    },
-    link: "https://github.com/tusharvarshney/qabox",
-    skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
-    ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/tusharvarshney/qabox",
-  },
+  // {
+  //   id: "qabox",
+  //   title: "QABox",
+  //   period: {
+  //     start: "07.2023",
+  //     end: "07.2023",
+  //   },
+  //   link: "https://github.com/tusharvarshney/qabox",
+  //   skills: [
+  //     "University Project",
+  //     "PHP",
+  //     "MySQL",
+  //     "MVC",
+  //     "Docker",
+  //     "Docker Compose",
+  //   ],
+  //   description:
+  //     "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/tusharvarshney/qabox",
+  // },
   {
     id: "klyp",
     title: "klyp",
     period: {
-      start: "07.2023",
+      start: "01.2026",
     },
     link: "https://github.com/tusharvarshney/taskbox",
     skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
+      "React",
+      "TypeScript",
+      "Video Processing",
+      "Node.js",
+      "REST API",
+      "Content Management",
     ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/tusharvarshney/taskbox",
+    description: `KLYP is a modern video content platform designed for seamless video sharing and management with social features.
+- Full-stack video platform built with React and Node.js for scalable content delivery
+- Implements video upload, processing, and adaptive streaming for optimal playback across devices
+- Features user authentication, content organization, and social engagement tools
+- Integrated cloud storage for efficient media management and CDN distribution
+- Built with modern web technologies focused on performance and user experience`,
     logo: "/klyp.png",
   },
   {
@@ -208,15 +212,18 @@ export const PROJECTS: Project[] = [
     },
     link: "https://github.com/tusharv2005/Livecard",
     skills: [
-      "Self-learning Project",
-      "Pet Project",
-      "Express.js",
+      "Animation",
       "Socket.io",
-      "MongoDB",
-      "Mongoose ODM",
+      "Express.js",
+      "Real-time Communication",
+      "REST API",
     ],
-    description:
-      "LiveCard turns your Linkedin profile into a dynamic, animated identity - going beyond boring banners to create a profile that actually moves, reacts, and stands out.",
+    description: `LiveCard transforms LinkedIn profiles into dynamic, animated digital identities that stand out from static banners.
+- Open-source tool designed to help professionals create memorable first impressions
+- Real-time profile animation system built with Socket.io for live updates and interactions
+- Generates animated profile banners that react to user data and LinkedIn activity
+- Implements custom animation engine for smooth transitions and visual effects
+- Built as a self-learning project exploring real-time web technologies and creative automation`,
     logo: "/livecard.png",
   },
   //   {
