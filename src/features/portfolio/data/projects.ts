@@ -54,6 +54,7 @@ export const PROJECTS: Project[] = [
     },
     link: "https://zode.ai",
     skills: [
+      "Open Source",
       "Agentic Engineering",
       "Coding Agents",
       "Multi-File Editing",
@@ -62,13 +63,13 @@ export const PROJECTS: Project[] = [
       "Context Awareness",
       "Workflow Orchestration",
       "Developer Experience",
-      "SaaS",
+      "Apache-2.0",
     ],
-    description: `Zode is a modern AI-powered engineering platform. Design, develop, and deliver exceptional software faster with intelligent automation built for developers.
-- Intelligent coding agents automate repetitive and complex development tasks
-- Provides context-aware code intelligence across large codebases
-- Supports multi-file editing and orchestrated AI-driven workflows
-- Built to deliver a faster and more intuitive developer experience
+    description: `Zode is an open-source AI coding agent that runs inside VS Code, JetBrains IDEs, and your terminal. It writes, debugs, refactors, and reviews code, automates multi-step tasks across your repo, and gives you direct access to 500+ AI models.
+- Supports Claude, GPT, Gemini, DeepSeek, and local models via Ollama or LM Studio
+- Apache-2.0 licensed — every prompt is visible, bring your own API keys at provider rates with no markup
+- Unlike closed alternatives, you have full control and transparency
+- Built to deliver exceptional developer experience with intelligent automation
 `,
     logo: "/ZODE.png",
   },

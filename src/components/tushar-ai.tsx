@@ -15,11 +15,11 @@ type QA = {
 const QA_LIST: QA[] = [
   {
     q: "Who is Tushar?",
-    a: "AI engineer, founder of Horizn Games, and a Snapchat AR creator with 2.96M+ lens plays.",
+    a: "AI engineer, founder of Horizn Games, and a Snapchat AR creator with 2.96M+ lens plays and 70M+ views.",
   },
   {
     q: "What are you building?",
-    a: "Zode — an open-source AI coding agent — plus new games and AR lenses.",
+    a: "Zode.ai - an open-source AI coding agent — plus new games and AR lenses.",
   },
   {
     q: "What's your reach?",
@@ -27,7 +27,7 @@ const QA_LIST: QA[] = [
   },
   {
     q: "What can you do?",
-    a: "Ship products end to end — AI, games, web, and content that reaches millions.",
+    a: "Ship products end to end - AI, games, web, and content that reaches millions.",
   },
   {
     q: 'Why "Horizn Games"?',
@@ -43,15 +43,15 @@ const QA_LIST: QA[] = [
   },
   {
     q: "Coffee or tea?",
-    a: "Neither — I run on the love I receive ❤️",
+    a: "Neither - I run on the love I receive ❤️",
   },
   {
     q: "Can we collaborate?",
-    a: "Yes — I love teaming up on ambitious ideas. Let's talk.",
+    a: "Yes - I love teaming up on ambitious ideas. Let's talk.",
   },
   {
     q: "How do I reach you?",
-    a: "Tap any social link below — or scan my QR to save my contact.",
+    a: "Tap any social link below - or scan my QR to save my contact.",
   },
 ]
 

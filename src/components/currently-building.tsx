@@ -13,6 +13,10 @@ type BuildingItem = {
 
 // What I'm actively shipping right now. Update freely.
 const BUILDING: BuildingItem[] = [
+  // {
+  //   text: "Zode — open-source AI coding agent 🤖",
+  //   href: "https://zode.ai",
+  // },
   {
     text: "a new game for Horizn Games 👨‍💻",
     href: "/puzzlegame.jpeg",

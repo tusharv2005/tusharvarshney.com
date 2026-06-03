@@ -4,31 +4,49 @@ import type { Testimonial } from "../types/testimonials"
 export const TESTIMONIALS_1: Testimonial[] = [
   {
     authorAvatar: "https://unavatar.io/x/dimicx",
-    authorName: "dimi",
+    authorName: "SimpleMemo",
     authorTagline: "Design Engineer",
-    url: "https://x.com/dimicx/status/2035018694053577149",
+    url: "https://bsky.app/profile/simplememo.bsky.social/post/3mjsaloolf22d",
     quote:
-      "i like this subtle version a lot more than the over-the-top examples i see everywhere, very nice",
-    date: "2026-03-20",
+      "ship-worthy niche. open-source makes it trustable too - people can see exactly what's getting stripped out.",
+    date: "2026-02-18",
     isVerified: true,
   },
   {
-    authorAvatar: "https://unavatar.io/x/khushiirl",
-    authorName: "khushi.vy",
-    authorTagline: "Software Engineer",
-    url: "https://x.com/khushiirl/status/2025894411155206168",
-    quote: "Goated portfolio. I love the whole UI in Vercel style",
-    date: "2026-02-23",
-    isVerified: true,
+    authorName: "Hem Mistry",
+    authorTagline: "Google Play User",
+    authorAvatar:
+      "https://ui-avatars.com/api/?name=Hem+Mistry&background=random",
+    url: "https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster&pcampaignid=web_share",
+    quote:
+      "it's a great game and the best thing is the adds don't pop up like other games",
+    date: "2026-03-01",
   },
+  {
+    authorName: "alfredo_mac1",
+    authorTagline: "Instagram Community",
+    authorAvatar: "https://unavatar.io/x/khushiirl",
+    url: "https://www.instagram.com/reel/DYAXgnvT7Hd/?comment_id=18030031685800924",
+    quote: "The job interviewer throwing me curveballs 😂",
+    date: "2026-04-10",
+  },
+  // {
+  //   authorAvatar: "https://unavatar.io/x/khushiirl",
+  //   authorName: "khushi.vy",
+  //   authorTagline: "Software Engineer",
+  //   url: "https://x.com/khushiirl/status/2025894411155206168",
+  //   quote: "Goated portfolio. I love the whole UI in Vercel style",
+  //   date: "2026-02-23",
+  //   isVerified: true,
+  // },
   {
     authorAvatar: "https://unavatar.io/x/meghtrix",
-    authorName: "Megh",
+    authorName: "Grae1512",
     authorTagline: "Creator of patterncraft.fun",
-    url: "https://x.com/meghtrix/status/2017658774530781471",
+    url: "https://www.threads.com/@grae1512/post/DB27q6RCsUm",
     quote:
-      "The best looking website I've ever seen? @tusharvarshney portfolio!",
-    date: "2026-02-01",
+      "Not to ask a stupid question... But why don't radars work over the Atlantic?",
+    date: "2024-02-11",
   },
   {
     authorAvatar: "https://unavatar.io/x/shadcncraft?v=2",
@@ -39,6 +57,15 @@ export const TESTIMONIALS_1: Testimonial[] = [
     date: "2026-01-30",
     isVerified: true,
     order: 6,
+  },
+  {
+    authorName: "Pratham Sangurdekar",
+    authorTagline: "Google Play User",
+    authorAvatar:
+      "https://ui-avatars.com/api/?name=Pratham+Sangurdekar&background=random",
+    url: "https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster&pcampaignid=web_share",
+    quote: "Extremely addictive and fun",
+    date: "2026-02-14",
   },
   {
     authorAvatar: "https://unavatar.io/x/KartikeyStack",
@@ -175,25 +202,6 @@ export const TESTIMONIALS_1: Testimonial[] = [
     quote:
       "This is an amazing lens! The effects are so smooth and creative. Love using it!",
     date: "2026-01-15",
-  },
-  {
-    authorName: "Hem Mistry",
-    authorTagline: "Google Play User",
-    authorAvatar:
-      "https://ui-avatars.com/api/?name=Hem+Mistry&background=random",
-    url: "https://play.google.com/store/apps/details?id=com.zode.app",
-    quote:
-      "it's a great game and the best thing is the adds don't pop up like other games",
-    date: "2026-03-01",
-  },
-  {
-    authorName: "Pratham Sangurdekar",
-    authorTagline: "Google Play User",
-    authorAvatar:
-      "https://ui-avatars.com/api/?name=Pratham+Sangurdekar&background=random",
-    url: "https://play.google.com/store/apps/details?id=com.zode.app",
-    quote: "Extremely addictive and fun",
-    date: "2026-02-14",
   },
 ]
 
@@ -444,29 +452,5 @@ export const TESTIMONIALS_2: Testimonial[] = [
     quote: "i like your style! :)",
     date: "2025-05-18",
     isVerified: true,
-  },
-  {
-    authorName: "Grae",
-    authorTagline: "Threads User",
-    authorAvatar: "/threads.png",
-    url: "https://www.threads.com/@grae1512/post/DB27q6RCsUm",
-    quote: "Amazing work! Love the creativity 🔥",
-    date: "2026-02-20",
-  },
-  {
-    authorName: "SimpleMemo",
-    authorTagline: "Bluesky User",
-    authorAvatar: "/bluesky.png",
-    url: "https://bsky.app/profile/simplememo.bsky.social/post/3mjsaloolf22d",
-    quote: "This is brilliant! 💙",
-    date: "2026-02-18",
-  },
-  {
-    authorName: "Instagram User",
-    authorTagline: "Instagram Community",
-    authorAvatar: "/instapic.png",
-    url: "https://www.instagram.com/reel/DYAXgnvT7Hd/?comment_id=18030031685800924",
-    quote: "So creative and well-executed! ❤️",
-    date: "2026-02-10",
   },
 ]
