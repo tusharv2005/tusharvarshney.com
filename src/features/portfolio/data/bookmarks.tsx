@@ -75,7 +75,7 @@ export const BOOKMARKS: Bookmark[] = [
   },
   {
     title: "Hugging Face Transformers",
-    url: "https://huggingface.co/docs/transformers",
+    url: "https://huggingface.co/docs/transformers/en/index",
     author: "Hugging Face",
     icon: <Brain />,
     bookmarkedAt: "2026-01-20",
@@ -127,9 +127,9 @@ export const BOOKMARKS: Bookmark[] = [
     bookmarkedAt: "2026-01-05",
   },
   {
-    title: "Zero to One",
-    url: "https://blakemasters.com/peter-thiels-cs183-startup",
-    author: "Peter Thiel",
+    title: "Zero to One - CS183 Notes",
+    url: "https://blakemasters.tumblr.com/peter-thiels-cs183-startup",
+    author: "Peter Thiel & Blake Masters",
     icon: <Rocket />,
     bookmarkedAt: "2026-02-01",
   },
