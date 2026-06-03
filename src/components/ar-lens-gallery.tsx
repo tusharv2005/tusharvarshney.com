@@ -30,6 +30,16 @@ const LENSES: Lens[] = [
     image: "/lenses/lens-3.png",
     link: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=99bca4d448c547bb9dd1b01a8f10aae5&metadata=01",
   },
+  {
+    name: "Glassy Pop",
+    image: "/lenses/lens-5.png",
+    link: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=7f49d8ef435a45b6a5aa50d31267f991&metadata=01",
+  },
+  {
+    name: "TODAY",
+    image: "/lenses/lens-4.png",
+    link: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=7c0def47945648e2be326c1450a9783d&metadata=01",
+  },
 ]
 
 const ROTATE_INTERVAL = 3500

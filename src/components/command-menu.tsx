@@ -113,11 +113,12 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     href: "/#projects",
     icon: <Box />,
   },
-  {
-    title: "Awards",
-    href: "/#awards",
-    icon: <Crown />,
-  },
+  // Hidden until awards are received - uncomment when ready
+  // {
+  //   title: "Awards",
+  //   href: "/#awards",
+  //   icon: <Crown />,
+  // },
   {
     title: "Certifications",
     href: "/#certs",

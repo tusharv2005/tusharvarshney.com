@@ -83,8 +83,9 @@ export default function Page() {
         <Projects />
         <Separator />
 
-        <Awards />
-        <Separator />
+        {/* Hidden until awards are received - uncomment when ready */}
+        {/* <Awards />
+        <Separator /> */}
 
         <Certifications />
         <Separator />

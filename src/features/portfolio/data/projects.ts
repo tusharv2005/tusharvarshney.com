@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "03.2026",
     },
-    link: "https://zode.ai",
+    link: "https://github.com/tusharv2005/zode.ai",
     skills: [
       "Open Source",
       "Agentic Engineering",
@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "10.2025",
     },
-    link: "https://zadark.com",
+    link: "https://github.com/tusharv2005/NotchOS",
     skills: [
       "Product Engineering",
       "Open Source",

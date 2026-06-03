@@ -19,7 +19,7 @@ const BUILDING: BuildingItem[] = [
   // },
   {
     text: "a new game for Horizn Games 👨‍💻",
-    href: "/puzzlegame.jpeg",
+    href: "/puzzlegamevideo.mp4",
   },
   { text: "more AR lenses for Snapchat ✨" },
   { text: "more content for the feed 🤙" },
