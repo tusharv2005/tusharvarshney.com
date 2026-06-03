@@ -50,8 +50,7 @@ export const USER: User = {
   },
   ogImage:
     "https://assets.tusharvarshney.com/images/screenshot-og-image-dark.png?t=1778130487",
-  namePronunciationUrl:
-    "https://actions.google.com/sounds/v1/alarms/beep_short.ogg",
+  namePronunciationUrl: "/tvarshney_make_me_an_vid.mp4",
   timeZone: "Asia/Kolkata",
   keywords: [
     "tusharvarshney",
