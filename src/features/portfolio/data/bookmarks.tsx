@@ -111,8 +111,8 @@ export const BOOKMARKS: Bookmark[] = [
     bookmarkedAt: "2024-08-10",
   },
   {
-    title: "How to Get Views on YouTube",
-    url: "https://www.youtube.com/intl/en_us/creators/how-things-work/discovery-and-performance",
+    title: "YouTube Creator Research Insights",
+    url: "https://www.youtube.com/creators",
     author: "YouTube",
     icon: <Video />,
     bookmarkedAt: "2025-02-15",
