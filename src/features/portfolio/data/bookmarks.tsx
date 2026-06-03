@@ -14,9 +14,9 @@ export const BOOKMARKS: Bookmark[] = [
     bookmarkedAt: "2025-09-15",
   },
   {
-    title: "Meta Spark AR Documentation",
-    url: "https://spark.meta.com/learn",
-    author: "Meta",
+    title: "AR.js - Augmented Reality for the Web",
+    url: "https://ar-js-org.github.io/AR.js-Docs",
+    author: "AR.js Community",
     icon: <Sparkles />,
     bookmarkedAt: "2025-10-20",
   },
@@ -26,6 +26,13 @@ export const BOOKMARKS: Bookmark[] = [
     author: "Immersive Web",
     icon: <Sparkles />,
     bookmarkedAt: "2025-11-05",
+  },
+  {
+    title: "8th Wall Web AR Development",
+    url: "https://www.8thwall.com/docs",
+    author: "8th Wall",
+    icon: <Sparkles />,
+    bookmarkedAt: "2026-01-08",
   },
 
   // Game Development
@@ -83,25 +90,32 @@ export const BOOKMARKS: Bookmark[] = [
 
   // Content Creation
   {
-    title: "YouTube Creator Academy",
-    url: "https://creatoracademy.youtube.com",
+    title: "YouTube Certified Courses",
+    url: "https://support.google.com/youtube/answer/7380223",
     author: "YouTube",
     icon: <Video />,
     bookmarkedAt: "2023-06-15",
   },
   {
-    title: "Hook Point: How to Stand Out",
-    url: "https://www.hookpoint.com",
+    title: "Hook Point by Brendan Kane",
+    url: "https://brendanjkane.com/hook-point-book",
     author: "Brendan Kane",
     icon: <Video />,
     bookmarkedAt: "2024-03-20",
   },
   {
-    title: "MrBeast's Content Strategy",
-    url: "https://www.youtube.com/@MrBeast",
-    author: "MrBeast",
+    title: "The Guide to Going Viral",
+    url: "https://guide.hookpoint.com",
+    author: "Hook Point",
     icon: <Video />,
     bookmarkedAt: "2024-08-10",
+  },
+  {
+    title: "How to Get Views on YouTube",
+    url: "https://www.youtube.com/intl/en_us/creators/how-things-work/discovery-and-performance",
+    author: "YouTube",
+    icon: <Video />,
+    bookmarkedAt: "2025-02-15",
   },
 
   // Business & Startup
