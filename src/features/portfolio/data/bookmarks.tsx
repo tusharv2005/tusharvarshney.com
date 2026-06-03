@@ -74,9 +74,9 @@ export const BOOKMARKS: Bookmark[] = [
     bookmarkedAt: "2025-12-05",
   },
   {
-    title: "Hugging Face Transformers",
-    url: "https://huggingface.co/docs/transformers/en/index",
-    author: "Hugging Face",
+    title: "PyTorch Tutorials",
+    url: "https://pytorch.org/tutorials",
+    author: "PyTorch",
     icon: <Brain />,
     bookmarkedAt: "2026-01-20",
   },
