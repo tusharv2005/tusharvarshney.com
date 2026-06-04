@@ -167,43 +167,43 @@ export const PROJECTS: Project[] = [
 - Project Score: 10/10
 - Source Code: https://github.com/tusharvarshney/ltudjava-summer2020-hibernate`,
   },
-  {
-    id: "penphy",
-    title: "Penphy",
-    period: {
-      start: "01.2019",
-      end: "08.2019",
-    },
-    link: "https://www.youtube.com/watch?v=EdU7rUO-UA4",
-    skills: ["Startup Project", "JavaScript", "React Native"],
-    description: "2nd Prize — Business Startup Competition 2019",
-  },
-  {
-    id: "unlimitedstudy",
-    title: "UnlimitedStudy",
-    period: {
-      start: "01.2017",
-      end: "08.2018",
-    },
-    link: "https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm",
-    skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-      "jQuery",
-      "Bootstrap 3",
-    ],
-    description: `UnlimitedStudy is a website that provides teaching and learning support tools for teachers and students.
-- 3rd Prize — National Science and Engineering Fair 2018 (ViSEF)
-- 1st Prize — Can Tho City Science and Engineering Fair 2018
-- 3rd Prize — National Young Informatics Contest 2018
-- 2nd Prize — Can Tho City Youth and Children’s Creativity Contest 2018
-- 3rd Prize — Can Tho City Young Informatics Contest 2018
-- Reached 7k+ users, mainly high school students in Can Tho City
-- Pilot implemented in high schools across Can Tho City with English quizzes, supervised by English subject specialists from the Can Tho City Department of Education and Training`,
-  },
+  //   {
+  //     id: "penphy",
+  //     title: "Penphy",
+  //     period: {
+  //       start: "01.2019",
+  //       end: "08.2019",
+  //     },
+  //     link: "https://www.youtube.com/watch?v=EdU7rUO-UA4",
+  //     skills: ["Startup Project", "JavaScript", "React Native"],
+  //     description: "2nd Prize — Business Startup Competition 2019",
+  //   },
+  //   {
+  //     id: "unlimitedstudy",
+  //     title: "UnlimitedStudy",
+  //     period: {
+  //       start: "01.2017",
+  //       end: "08.2018",
+  //     },
+  //     link: "https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm",
+  //     skills: [
+  //       "National Competition",
+  //       "Creative Software",
+  //       "PHP",
+  //       "Laravel 4",
+  //       "MySQL",
+  //       "jQuery",
+  //       "Bootstrap 3",
+  //     ],
+  //     description: `UnlimitedStudy is a website that provides teaching and learning support tools for teachers and students.
+  // - 3rd Prize — National Science and Engineering Fair 2018 (ViSEF)
+  // - 1st Prize — Can Tho City Science and Engineering Fair 2018
+  // - 3rd Prize — National Young Informatics Contest 2018
+  // - 2nd Prize — Can Tho City Youth and Children’s Creativity Contest 2018
+  // - 3rd Prize — Can Tho City Young Informatics Contest 2018
+  // - Reached 7k+ users, mainly high school students in Can Tho City
+  // - Pilot implemented in high schools across Can Tho City with English quizzes, supervised by English subject specialists from the Can Tho City Department of Education and Training`,
+  //   },
   {
     id: "liveCard",
     title: "LiveCard",
