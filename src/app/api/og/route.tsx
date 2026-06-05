@@ -8,20 +8,14 @@ export async function GET(request: NextRequest) {
   const title = searchParams.get("title") || "Tushar Varshney"
   const description =
     searchParams.get("description") || "Developer, Entrepreneur, Creator"
-  const type = searchParams.get("type") || "default" // default, game, content, code, business
+  const type = searchParams.get("type") || "default"
 
-  // Different gradient backgrounds for different blog types
-  const gradients = {
-    default: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-    game: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-    content: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-    code: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-    business: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-    ar: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
-  }
+  // Your brand logo SVG path
+  const logoPath =
+    "M0 0h192v64h-64v128h32v64H32v-64h32V64H0ZM256 0v64h32v64h32v64h32v64h64v-64h32v-64h32v-64h32v-64h-64v64h-32v64h-64v-64h-32v-64Z"
 
-  const background =
-    gradients[type as keyof typeof gradients] || gradients.default
+  // Clean, minimal design matching your portfolio
+  const isDark = true // Your site uses dark mode by default
 
   return new ImageResponse(
     (
@@ -31,77 +25,79 @@ export async function GET(request: NextRequest) {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "space-between",
-          background,
-          padding: "60px 80px",
-          fontFamily: "system-ui, -apple-system, sans-serif",
+          backgroundColor: isDark ? "#09090b" : "#ffffff",
+          padding: "80px",
+          fontFamily: "Inter, system-ui, -apple-system, sans-serif",
         }}
       >
-        {/* Logo/Brand */}
+        {/* Header with Logo */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "12px",
+            gap: "20px",
+            marginBottom: "60px",
           }}
         >
+          {/* Your Logo */}
+          <svg
+            width="80"
+            height="40"
+            viewBox="0 0 512 256"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill={isDark ? "#ffffff" : "#09090b"} d={logoPath} />
+          </svg>
+
+          {/* Brand Name */}
           <div
             style={{
-              width: "40px",
-              height: "40px",
-              background: "rgba(255, 255, 255, 0.2)",
-              borderRadius: "8px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
               fontSize: "24px",
-              fontWeight: "bold",
-              color: "white",
-            }}
-          >
-            T
-          </div>
-          <span
-            style={{
-              fontSize: "20px",
-              fontWeight: "600",
-              color: "rgba(255, 255, 255, 0.9)",
+              fontWeight: "500",
+              color: isDark ? "rgba(255, 255, 255, 0.7)" : "rgba(0, 0, 0, 0.7)",
               letterSpacing: "-0.02em",
             }}
           >
             tusharvarshney.com
-          </span>
+          </div>
         </div>
 
-        {/* Title */}
+        {/* Content */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "20px",
-            maxWidth: "1000px",
+            gap: "24px",
+            flex: 1,
+            justifyContent: "center",
           }}
         >
+          {/* Title */}
           <h1
             style={{
-              fontSize: title.length > 50 ? "56px" : "72px",
-              fontWeight: "800",
-              color: "white",
+              fontSize: title.length > 50 ? "64px" : "80px",
+              fontWeight: "700",
+              color: isDark ? "#ffffff" : "#09090b",
               lineHeight: "1.1",
               margin: 0,
-              textShadow: "0 2px 20px rgba(0,0,0,0.2)",
+              letterSpacing: "-0.03em",
+              maxWidth: "1000px",
             }}
           >
             {title}
           </h1>
+
+          {/* Description */}
           {description && (
             <p
               style={{
-                fontSize: "28px",
+                fontSize: "32px",
                 fontWeight: "400",
-                color: "rgba(255, 255, 255, 0.85)",
-                lineHeight: "1.4",
+                color: isDark
+                  ? "rgba(255, 255, 255, 0.6)"
+                  : "rgba(0, 0, 0, 0.6)",
+                lineHeight: "1.5",
                 margin: 0,
                 maxWidth: "900px",
               }}
@@ -117,14 +113,53 @@ export async function GET(request: NextRequest) {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "16px",
-            fontSize: "18px",
-            color: "rgba(255, 255, 255, 0.7)",
+            justifyContent: "space-between",
+            marginTop: "60px",
+            paddingTop: "40px",
+            borderTop: `1px solid ${isDark ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.1)"}`,
           }}
         >
-          <span>📚 Blog</span>
-          <span>•</span>
-          <span>{new Date().getFullYear()}</span>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "16px",
+              fontSize: "20px",
+              color: isDark ? "rgba(255, 255, 255, 0.5)" : "rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <span>📚 Blog</span>
+            <span>•</span>
+            <span>{new Date().getFullYear()}</span>
+          </div>
+
+          {/* Type indicator */}
+          {type !== "default" && (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                padding: "12px 24px",
+                borderRadius: "8px",
+                backgroundColor: isDark
+                  ? "rgba(255, 255, 255, 0.05)"
+                  : "rgba(0, 0, 0, 0.05)",
+                fontSize: "18px",
+                fontWeight: "500",
+                color: isDark
+                  ? "rgba(255, 255, 255, 0.7)"
+                  : "rgba(0, 0, 0, 0.7)",
+                textTransform: "uppercase",
+                letterSpacing: "0.05em",
+              }}
+            >
+              {type === "game" && "🎮 Game Dev"}
+              {type === "content" && "📱 Content"}
+              {type === "code" && "💻 Development"}
+              {type === "business" && "💼 Business"}
+              {type === "ar" && "🥽 AR/VR"}
+            </div>
+          )}
         </div>
       </div>
     ),
