@@ -1,0 +1,78 @@
+---
+title: Why I Built Zode.ai — An Open-Source AI Coding Assistant
+description: Building an AI coding agent that gives developers full control, transparency, and access to 500+ models.
+image: https://assets.tusharvarshney.com/images/blog/zode-ai.webp
+pinned: true
+createdAt: 2026-03-10
+updatedAt: 2026-03-10
+---
+
+I built [Zode.ai](https://github.com/tusharv2005/zode.ai) because I wanted an AI coding assistant that I actually controlled — one where I could see every prompt, bring my own API keys, and switch between models without vendor lock-in.
+
+<FramedImage src="/ZODE.png" alt="Zode.ai Logo" />
+
+## The Problem I Was Solving
+
+Most AI coding tools are black boxes. You don't know what prompts they're sending, what data they're collecting, or how much markup they're adding to API costs. You're locked into their model choices, their pricing, and their terms.
+
+As someone who builds with AI daily, I wanted:
+
+- **Transparency** — see exactly what's being sent to the model
+- **Control** — use my own API keys at provider rates, no markup
+- **Flexibility** — switch between Claude, GPT, Gemini, DeepSeek, or local models
+- **Privacy** — know that my code stays on my machine unless I explicitly send it
+
+The existing tools didn't offer this. So I built Zode.
+
+## Why Open Source (Apache-2.0)
+
+Zode is licensed under Apache-2.0 — one of the most permissive open-source licenses. Here's why:
+
+**Trust through transparency.** When you can read the source code, you know exactly how the tool works. No hidden data collection, no mysterious "optimization" that sends your code to third-party servers.
+
+**Community-driven development.** Open source means anyone can contribute, fix bugs, or build extensions. The best ideas come from people actually using the tool.
+
+**No vendor lock-in.** You can fork it, modify it, or self-host it. Your workflow doesn't depend on a company staying in business or maintaining reasonable pricing.
+
+**Fair pricing.** Bring your own API keys and pay provider rates directly. If Claude costs $0.015 per 1K tokens, that's what you pay — no 2x or 3x markup.
+
+I've used too many tools that started free, got popular, then changed their terms. Open source prevents that.
+
+## How It Works
+
+Zode runs inside VS Code, JetBrains IDEs, and your terminal. It's an agentic coding assistant that:
+
+- Writes, debugs, refactors, and reviews code across multiple files
+- Automates multi-step tasks like "add authentication" or "refactor this API"
+- Understands your entire codebase through context-aware orchestration
+- Gives you access to 500+ AI models — Claude, GPT, Gemini, DeepSeek, Ollama, LM Studio
+
+The architecture is built around intelligent automation and developer experience. It doesn't just autocomplete — it thinks through problems, plans changes, and executes them across your repo.
+
+## Community Response & Feedback
+
+The response has been encouraging. Developers who care about transparency and control have been the early adopters. The feedback has shaped the roadmap — better multi-file editing, improved context awareness, and support for more model providers.
+
+The GitHub repository is where the conversation happens. Issues, pull requests, and feature discussions all happen in the open.
+
+## Roadmap & Future Features
+
+Here's what's coming:
+
+- **Enhanced multi-file editing** — smarter conflict resolution and change tracking
+- **Improved context management** — better understanding of large codebases
+- **More model integrations** — support for new providers as they launch
+- **Team collaboration features** — shared prompts, workflows, and configurations
+- **Performance optimizations** — faster responses, lower token usage
+
+The goal is to build the AI coding assistant I wish existed when I started. Transparent, powerful, and fully under your control.
+
+## Try It Yourself
+
+Zode is free and open source. You can:
+
+- Explore the code: [GitHub Repository](https://github.com/tusharv2005/zode.ai)
+- Read the docs and get started
+- Contribute or open issues
+
+If you care about owning your tools and understanding how they work, Zode might be for you.
