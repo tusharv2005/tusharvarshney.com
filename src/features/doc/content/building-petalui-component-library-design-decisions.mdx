@@ -1,0 +1,243 @@
+---
+title: Building PetalUI — Component Library Design Decisions
+description: Why I built a React component library, the architecture choices behind it, how I published to npm, and setting up a monorepo with Turborepo.
+image: https://assets.tusharvarshney.com/images/blog/petalui.webp
+pinned: false
+createdAt: 2026-02-20
+updatedAt: 2026-02-20
+---
+
+I built [PetalUI](https://react-wheel-picker.tusharvarshney.com) as a collection of polished React components that deliver native-like interactions — the kind you feel when using well-crafted mobile apps, but for the web.
+
+<FramedImage src="/petalUI.png" alt="PetalUI Logo" />
+
+## Why I Built It
+
+Every project I worked on needed the same set of high-quality, interactive components. I was either rebuilding them from scratch or fighting with existing libraries that didn't quite match the level of polish I wanted.
+
+The problem wasn't that component libraries don't exist — it's that most of them prioritize either flexibility or polish, rarely both. I wanted:
+
+- **Native-feeling interactions** — smooth animations, physics-based gestures, haptic feedback
+- **Accessibility by default** — ARIA attributes, keyboard navigation, screen reader support
+- **Full customization** — no fighting with `!important` to override styles
+- **Performance** — lightweight, tree-shakeable, no unnecessary re-renders
+
+So I started building components for my own projects, and PetalUI emerged from that.
+
+## Architecture Choices
+
+### Component Design Philosophy
+
+Each PetalUI component follows a consistent pattern:
+
+**Composition over configuration.** Rather than a single component with 30 props, I build smaller primitives that compose together. This keeps the API surface small and makes components easier to customize.
+
+**Controlled by default, uncontrolled as an option.** Most components accept both `value` + `onChange` (controlled) or `defaultValue` (uncontrolled). This gives developers flexibility without sacrificing predictability.
+
+**Motion-first animations.** I use [Motion](https://motion.dev/) for all animations. It's lightweight, performant, and gives me physics-based springs and gestures out of the box.
+
+**TypeScript-native.** Every component is written in TypeScript with strict types. No runtime prop validation — everything is caught at compile time.
+
+### Tech Stack
+
+The core stack is intentionally minimal:
+
+- **React 19** — the latest features like `use()` and improved hydration
+- **TypeScript** — strict mode, no `any` types
+- **Motion** — declarative animations and gesture handling
+- **Tailwind CSS** — utility-first styling with full theme customization
+- **Radix UI primitives** — for accessible base components (when needed)
+
+I avoid heavy dependencies. Every package added to PetalUI is a tradeoff between functionality and bundle size.
+
+### Component Examples
+
+Here are some components from PetalUI:
+
+#### [Wheel Picker](https://react-wheel-picker.tusharvarshney.com/components/react-wheel-picker)
+
+iOS-style wheel picker with smooth inertia scrolling and infinite loop support. Perfect for date pickers, time selectors, or any scrollable list.
+
+#### [Apple Hello Effect](https://react-wheel-picker.tusharvarshney.com/components/apple-hello-effect)
+
+SVG writing animation inspired by Apple's iconic "Hello" screen. Smooth path tracing with customizable languages.
+
+#### [Slide to Unlock](https://react-wheel-picker.tusharvarshney.com/components/slide-to-unlock)
+
+Interactive slider inspired by the classic iPhone gesture. Physics-based drag with haptic feedback and smooth snapping.
+
+#### [Text Flip](https://react-wheel-picker.tusharvarshney.com/components/text-flip)
+
+Animated text that cycles through items with a smooth flip transition. Great for hero sections and dynamic content.
+
+#### [Testimonials Marquee](https://react-wheel-picker.tusharvarshney.com/components/testimonials-marquee)
+
+Scrolling marquee to showcase user testimonials with pause on hover and infinite loop.
+
+#### [GitHub Contributions](https://react-wheel-picker.tusharvarshney.com/components/github-contributions)
+
+Visualize year-long GitHub contribution activity with daily counts, tooltips, and a profile link.
+
+Every component is [documented](https://react-wheel-picker.tusharvarshney.com), with live examples you can copy and customize.
+
+## Publishing to npm
+
+Publishing a component library to npm is straightforward once you understand the workflow. Here's what I learned:
+
+### Package Setup
+
+Each component is a separate npm package under the `@ncdai` scope. This lets developers install only what they need:
+
+```bash
+pnpm add @ncdai/react-wheel-picker
+pnpm add @ncdai/slide-to-unlock
+```
+
+The key files in each package:
+
+- `package.json` — defines entry points, dependencies, and peer dependencies
+- `tsconfig.json` — TypeScript compiler config for building
+- `README.md` — install instructions and usage examples
+
+### Build Process
+
+I use **tsup** for bundling. It's fast, supports TypeScript out of the box, and generates both ESM and CJS builds:
+
+```json
+{
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts"
+  }
+}
+```
+
+This outputs:
+
+- `dist/index.js` — CommonJS for older bundlers
+- `dist/index.mjs` — ES Modules for modern tooling
+- `dist/index.d.ts` — TypeScript type definitions
+
+### Publishing Workflow
+
+Publishing is automated with GitHub Actions:
+
+1. Push a version tag: `git tag v1.2.0 && git push --tags`
+2. GitHub Actions runs tests and builds the package
+3. If all checks pass, it publishes to npm with provenance
+
+I use **changesets** for version management. It handles semantic versioning, generates changelogs, and manages multi-package releases in the monorepo.
+
+### npm Registry Best Practices
+
+- **Provenance statements** — prove packages were built in CI, not on a developer's machine
+- **Scoped packages** — prevents name collisions and looks professional
+- **Semantic versioning** — breaking changes bump major, new features bump minor
+- **Peer dependencies** — React and Motion are peer deps, not bundled
+
+## Monorepo Setup with Turborepo
+
+PetalUI is a monorepo managed by **Turborepo** and **pnpm workspaces**. This setup lets me:
+
+- Share code between packages without publishing to npm first
+- Run tasks (build, test, lint) across all packages in parallel
+- Cache build outputs to speed up CI and local development
+
+### Workspace Structure
+
+```
+petalui/
+├── packages/
+│   ├── react-wheel-picker/
+│   ├── slide-to-unlock/
+│   ├── text-flip/
+│   └── ... (more components)
+├── apps/
+│   └── docs/  (documentation site)
+├── turbo.json
+├── pnpm-workspace.yaml
+└── package.json
+```
+
+Each package in `packages/` is a publishable npm package. The `docs` app consumes them locally before they're published.
+
+### Turborepo Configuration
+
+Turborepo orchestrates tasks across the monorepo. My `turbo.json`:
+
+```json
+{
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "lint": {},
+    "test": {
+      "dependsOn": ["build"]
+    }
+  }
+}
+```
+
+This means:
+
+- **`build`** — builds dependencies first (`^build`), caches `dist/` folder
+- **`lint`** — runs in parallel across all packages
+- **`test`** — waits for `build` to finish first
+
+### Why Turborepo?
+
+Before Turborepo, I used Lerna. It worked, but builds were slow and there was no caching. Turborepo's caching is what sold me:
+
+- **Local caching** — if you rebuild a package that hasn't changed, Turborepo restores the output instantly
+- **Remote caching** — share build artifacts across team members and CI
+- **Parallel execution** — tasks run in parallel by default, respecting dependencies
+
+For a library with dozens of packages, this saves minutes on every build.
+
+### pnpm Workspaces
+
+pnpm is the package manager. It's faster than npm and yarn, uses less disk space, and has first-class monorepo support.
+
+The `pnpm-workspace.yaml` file defines which directories are packages:
+
+```yaml
+packages:
+  - "packages/*"
+  - "apps/*"
+```
+
+Now running `pnpm install` links all packages together. I can import `@ncdai/react-wheel-picker` in the docs app without publishing it first.
+
+### Development Workflow
+
+1. **Add a new component** — create a folder in `packages/`, add `package.json` and `tsconfig.json`
+2. **Develop locally** — the docs app imports it via workspace protocol
+3. **Build and test** — `turbo build test` runs across all packages
+4. **Publish** — use changesets to bump version, then push the tag
+
+The monorepo setup makes it easy to manage dozens of packages without losing my mind.
+
+## Lessons Learned
+
+Building and maintaining a component library taught me:
+
+**API design is harder than implementation.** The code for a component might take an hour. The API — deciding what props it should accept, what the defaults should be, how it composes with other components — takes days.
+
+**Good documentation is half the product.** A component without examples and clear install instructions might as well not exist. I spent as much time on the [docs site](https://react-wheel-picker.tusharvarshney.com) as on the components themselves.
+
+**Monorepos are worth the setup cost.** The initial Turborepo + pnpm config was tedious. But now I can add new packages, run tasks, and publish updates without thinking about it.
+
+**Publishing to npm is easy once you automate it.** Manual releases are error-prone. Automating with changesets and GitHub Actions removed all the friction.
+
+**Users will use your components in ways you didn't expect.** I built Wheel Picker for time selection. People are using it for color pickers, slot machines, and password inputs. Flexibility matters.
+
+## Try PetalUI
+
+PetalUI is open source and published to npm. You can:
+
+- Browse components: [Documentation Site](https://react-wheel-picker.tusharvarshney.com)
+- View source code: [GitHub Repository](https://github.com/tusharv2005/tusharvarshney.me)
+- Install packages: `pnpm add @ncdai/react-wheel-picker`
+
+If you're building React apps and want components that feel polished out of the box, PetalUI might save you some time.
