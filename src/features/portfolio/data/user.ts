@@ -24,16 +24,16 @@ export const USER: User = {
   jobs: [
     {
       title: "Studio Founder",
-      company: "horizngames",
-      website: "https://shadcncraft.com?atp=tusharvarshney",
-      experienceId: "shadcncraft",
+      company: "Horizn Games",
+      website:
+        "https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster",
+      experienceId: "HoriznGames",
     },
     {
       title: "Founder",
-      company: "Horizn Games",
-      website:
-        "https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster&pcampaignid=web_share",
-      experienceId: "horizngame",
+      company: "Zode.ai",
+      website: "https://github.com/tusharv2005/zode.ai",
+      experienceId: "freelance", // Zode.ai is part of open-source/indie work
     },
   ],
   about: `
