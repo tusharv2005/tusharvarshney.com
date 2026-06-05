@@ -1,0 +1,264 @@
+---
+title: Using AI to Build AI — How Claude Helped Me Build Zode
+description: The meta reality of AI-assisted development — prompting strategies, what works, what doesn't, and the future of AI building AI.
+image: https://assets.tusharvarshney.com/images/blog/ai-building-ai.webp
+pinned: true
+createdAt: 2026-03-15
+updatedAt: 2026-03-15
+---
+
+I built [Zode.ai](https://github.com/tusharv2005/zode.ai) — an AI coding assistant — using Claude, another AI coding assistant. This is the meta reality of development in 2026.
+
+## The Irony
+
+Building an AI tool with AI sounds circular, but it's the most practical way to work now. Claude helped me write code, debug issues, architect systems, and think through design decisions for a tool that does exactly that.
+
+The irony isn't lost on me. But here's the thing: **AI building AI isn't cheating. It's leverage.**
+
+## How I Used Claude to Build Zode
+
+### 1. Architecture & Design Decisions
+
+**What I asked:**
+
+- "Design an agentic workflow system that can edit multiple files"
+- "What's the best way to handle context windows for large codebases?"
+- "Compare VS Code extension architecture vs Language Server Protocol"
+
+**What Claude was good at:**
+
+- Laying out different approaches with pros/cons
+- Explaining trade-offs between patterns
+- Suggesting libraries and tools I hadn't considered
+
+**What it struggled with:**
+
+- Understanding my specific constraints (performance targets, user base, etc.)
+- Making the final decision (I still had to choose)
+
+### 2. Writing the Core Logic
+
+**What I asked:**
+
+- "Implement a file watcher that triggers on save"
+- "Write a TypeScript function that parses multi-file diffs"
+- "Create a context manager that prioritizes relevant files"
+
+**What Claude was good at:**
+
+- Writing boilerplate fast
+- Implementing standard patterns (file I/O, async operations, error handling)
+- Suggesting edge cases I didn't think of
+
+**What it struggled with:**
+
+- Domain-specific logic (how agentic workflows should actually behave)
+- Performance optimization (first draft was always slower than needed)
+- Understanding the full system (it only saw what I showed it)
+
+### 3. Debugging
+
+**What I asked:**
+
+- "This function throws 'undefined' on large files. Why?"
+- "The extension crashes when processing 100+ files. Help me debug."
+- "Explain why this async function isn't awaiting properly"
+
+**What Claude was good at:**
+
+- Spotting obvious bugs (missing awaits, type errors, logic mistakes)
+- Explaining why something wasn't working
+- Suggesting debugging strategies
+
+**What it struggled with:**
+
+- Bugs that required running the code (it can't execute, only read)
+- Issues that depended on external state or environment
+- Race conditions and timing issues
+
+### 4. Refactoring
+
+**What I asked:**
+
+- "Refactor this 300-line function into smaller, testable pieces"
+- "Make this code more readable without changing behavior"
+- "Extract this logic into a reusable module"
+
+**What Claude was good at:**
+
+- Breaking down large functions
+- Improving naming and structure
+- Identifying code smells
+
+**What it struggled with:**
+
+- Knowing which parts were performance-critical (and shouldn't be split)
+- Understanding the user-facing impact of changes
+
+## Prompting Strategies for Coding
+
+### 1. Start with Context
+
+**Bad prompt:**
+
+```
+Write a function to handle file changes
+```
+
+**Good prompt:**
+
+```
+I'm building a VS Code extension that monitors file edits.
+I need a function that:
+- Watches for file save events
+- Filters out non-code files
+- Triggers a callback with the file path and content
+Use VS Code API, TypeScript, and handle errors gracefully.
+```
+
+Context helps the AI understand what you're actually trying to do.
+
+### 2. Be Specific About Constraints
+
+**Bad prompt:**
+
+```
+Optimize this function
+```
+
+**Good prompt:**
+
+```
+This function processes 1000+ files and takes 5 seconds.
+I need it under 1 second. Optimize for:
+- Parallel processing
+- Memory efficiency (large files)
+- TypeScript type safety
+Show me the refactored version and explain the changes.
+```
+
+Tell the AI what success looks like.
+
+### 3. Ask for Alternatives
+
+**Bad prompt:**
+
+```
+How do I implement X?
+```
+
+**Good prompt:**
+
+```
+What are 3 different ways to implement X?
+For each approach, explain:
+- Pros and cons
+- Performance implications
+- Maintenance complexity
+Recommend which one for my use case: [describe use case]
+```
+
+Get options, not just one answer.
+
+### 4. Iterate in Public
+
+**Bad workflow:**
+
+- Get code from AI → copy/paste → hope it works
+
+**Good workflow:**
+
+- Get code from AI → test it → share results → ask for fixes → repeat
+
+Treat the AI like a pair programmer. Show it what happened, let it adjust.
+
+## What AI Is Good At
+
+### ✅ Boilerplate & Scaffolding
+
+AI crushes repetitive code. CRUD operations, API endpoints, type definitions — stuff you'd copy/paste from Stack Overflow anyway.
+
+### ✅ Explaining Complex Concepts
+
+Need to understand how WebSockets work? Or what a context-free grammar is? AI explains it clearly, at your level.
+
+### ✅ Pattern Recognition
+
+AI has seen millions of lines of code. It knows common patterns, best practices, and anti-patterns better than most humans.
+
+### ✅ Rapid Prototyping
+
+Testing an idea? AI can scaffold a working prototype in minutes. Perfect for validating concepts before committing to implementation.
+
+### ✅ Code Review
+
+AI catches bugs humans miss. Typos, logic errors, missing edge cases — it's tireless and doesn't get bored.
+
+## What AI Struggles With
+
+### ❌ Product Decisions
+
+AI can't decide what to build. It doesn't know your users, your market, or your vision. That's still on you.
+
+### ❌ System Design at Scale
+
+AI can design small systems. But architecting for 10M+ users? Handling complex distributed systems? It needs human judgment.
+
+### ❌ Domain Expertise
+
+AI knows general programming. It doesn't know your specific domain — game dev, AR, real-time systems, etc. — without being taught.
+
+### ❌ Creative Problem Solving
+
+When the solution isn't obvious, AI struggles. Novel approaches, unconventional ideas, breakthrough thinking — that's still human territory.
+
+### ❌ Understanding Context Outside the Prompt
+
+AI only knows what you tell it. It can't read your mind, check your codebase, or understand your constraints unless you explicitly state them.
+
+## The Future of AI Building AI
+
+### Today
+
+AI is a co-pilot. You drive, it suggests, you decide.
+
+### Near Future (1-2 years)
+
+AI becomes a junior developer. You give it tasks, it completes them, you review.
+
+### Mid Future (3-5 years)
+
+AI becomes a senior developer. You describe the feature, it architects and implements end-to-end.
+
+### Far Future (5+ years?)
+
+AI becomes the product lead. You describe the problem, it builds the solution.
+
+But here's what won't change: **humans decide what to build and why.** AI handles the how.
+
+## Lessons from Building Zode with Claude
+
+**1. AI is amplification, not replacement.**
+I built Zode 10x faster with Claude than alone. But Claude didn't build it — I did. The architecture, design decisions, user experience — all human.
+
+**2. Prompt engineering is the new skill.**
+Writing good prompts is like writing good specs. Clear, specific, context-rich. The better your prompts, the better the output.
+
+**3. Iterate fast, test faster.**
+AI will confidently give you wrong answers. Test everything. Trust nothing without verification.
+
+**4. Use AI for leverage, not crutch.**
+Don't use AI to write code you don't understand. Use it to write code faster that you already know how to write.
+
+**5. The meta loop is real.**
+AI building AI is recursive. Zode improves my workflow, which makes me better at building Zode, which improves my workflow. The loop compounds.
+
+## Try It Yourself
+
+If you're building AI tools, use AI to build them. The feedback loop is invaluable.
+
+If you're skeptical, try building something small. A CLI tool, a web scraper, a simple API. Use Claude (or GPT, Gemini, whatever). See how much faster you move.
+
+The future of development is collaborative — humans and AI working together. Not because it's trendy, but because it's practical.
+
+Check out [Zode.ai on GitHub](https://github.com/tusharv2005/zode.ai). Built with AI, for AI-assisted development.
