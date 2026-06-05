@@ -13,7 +13,8 @@ import { PostSearchInput } from "@/features/blog/components/post-search-input"
 import { getAllDocs } from "@/features/doc/data/documents"
 
 const title = "Blog"
-const description = "Writing about code, design, and everything in between."
+const description =
+  "Writing about code, design, games and everything in between."
 
 const ogImage = `/og/simple?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`
 
@@ -49,7 +50,7 @@ export default function Page() {
       <PageHeading>
         <PageHeadingTagline>Blog</PageHeadingTagline>
         <PageHeadingTitle>
-          Writing about code, design, and everything in between.
+          Writing about code, design, games and everything in between.
         </PageHeadingTitle>
       </PageHeading>
 

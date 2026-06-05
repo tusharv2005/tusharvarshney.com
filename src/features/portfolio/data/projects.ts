@@ -95,25 +95,6 @@ export const PROJECTS: Project[] = [
 `,
     logo: "/NotchOS.png",
   },
-  // {
-  //   id: "qabox",
-  //   title: "QABox",
-  //   period: {
-  //     start: "07.2023",
-  //     end: "07.2023",
-  //   },
-  //   link: "https://github.com/tusharvarshney/qabox",
-  //   skills: [
-  //     "University Project",
-  //     "PHP",
-  //     "MySQL",
-  //     "MVC",
-  //     "Docker",
-  //     "Docker Compose",
-  //   ],
-  //   description:
-  //     "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/tusharvarshney/qabox",
-  // },
   {
     id: "klyp",
     title: "klyp",
@@ -137,36 +118,50 @@ export const PROJECTS: Project[] = [
 - Built with modern web technologies focused on performance and user experience`,
     logo: "/klyp.png",
   },
-  {
-    id: "daichat-app",
-    title: "DaiChat App",
-    period: {
-      start: "07.2020",
-      end: "07.2020",
-    },
-    link: "https://www.youtube.com/watch?v=H5U3J_W1low",
-    skills: ["University Project", "Java", "Java Swing", "Java Networking"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Developed a real-time chat application using Java technologies
-- Project Score: 10/10
-- Source Code:
-  - Server: https://github.com/tusharvarshney/ltudjava-summer2020-chatapp_server
-  - Client: https://github.com/tusharvarshney/ltudjava-summer2020-chatapp_client`,
-  },
-  {
-    id: "qlsv-app",
-    title: "QLSV App",
-    period: {
-      start: "06.2020",
-      end: "06.2020",
-    },
-    link: "https://www.youtube.com/watch?v=tG9SZEBrwog",
-    skills: ["University Project", "Java", "Java Swing", "Hibernate", "MySQL"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Built a student management system with role-based functionalities using Java technologies
-- Project Score: 10/10
-- Source Code: https://github.com/tusharvarshney/ltudjava-summer2020-hibernate`,
-  },
+  //   {
+  //     id: "NotchOS",
+  //     title: "NotchOS",
+  //     period: {
+  //       start: "10.2025",
+  //     },
+  //     link: "https://github.com/tusharv2005/NotchOS",
+  //     skills: [
+  //       "Product Engineering",
+  //       "Open Source",
+  //       "macOS",
+  //       "SwiftUI",
+  //       "Productivity",
+  //     ],
+  //     description: `NotchOS transforms the MacBook notch into a powerful productivity hub with media controls, file management, widgets, and system utilities.
+  // - Native macOS application built with SwiftUI and modern Apple frameworks
+  // - Features music controls, file shelf, battery monitoring, and calendar integration
+  // - Inspired by Dynamic Island to enhance workflow and multitasking
+  // - Open-source project focused on improving the macOS desktop experience
+  // `,
+  //     logo: "/NotchOS.png",
+  //   },
+  //   {
+  //     id: "NotchOS",
+  //     title: "NotchOS",
+  //     period: {
+  //       start: "10.2025",
+  //     },
+  //     link: "https://github.com/tusharv2005/NotchOS",
+  //     skills: [
+  //       "Product Engineering",
+  //       "Open Source",
+  //       "macOS",
+  //       "SwiftUI",
+  //       "Productivity",
+  //     ],
+  //     description: `NotchOS transforms the MacBook notch into a powerful productivity hub with media controls, file management, widgets, and system utilities.
+  // - Native macOS application built with SwiftUI and modern Apple frameworks
+  // - Features music controls, file shelf, battery monitoring, and calendar integration
+  // - Inspired by Dynamic Island to enhance workflow and multitasking
+  // - Open-source project focused on improving the macOS desktop experience
+  // `,
+  //     logo: "/NotchOS.png",
+  //   },
   //   {
   //     id: "penphy",
   //     title: "Penphy",
@@ -226,24 +221,4 @@ export const PROJECTS: Project[] = [
 - Built as a self-learning project exploring real-time web technologies and creative automation`,
     logo: "/livecard.png",
   },
-  //   {
-  //     id: "study-english",
-  //     title: "Study English",
-  //     period: {
-  //       start: "11.2016",
-  //       end: "12.2017",
-  //     },
-  //     link: "https://www.youtube.com/watch?v=OYgugvjqU4A",
-  //     skills: [
-  //       "National Competition",
-  //       "Creative Software",
-  //       "PHP",
-  //       "Laravel 4",
-  //       "MySQL",
-  //     ],
-  //     description: `Study English is a free, mobile-friendly website for high school English learning, offering vocabulary, quizzes, listening practice, and more.
-  // - Consolation Prize — National Youth and Children’s Creativity Contest 2016
-  // - 1st Prize — Can Tho City Youth and Children’s Creativity Contest 2016
-  // - Consolation Prize — Can Tho City Young Informatics Contest 2016`,
-  //   },
 ]
