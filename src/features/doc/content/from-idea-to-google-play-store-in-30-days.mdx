@@ -1,0 +1,209 @@
+---
+title: From Idea to Google Play Store in 30 Days
+description: How I built and shipped Block Puzzle Master — the complete workflow from concept to live on Google Play.
+image: https://assets.tusharvarshney.com/images/blog/google-play-store-launch.webp
+pinned: true
+createdAt: 2026-01-25
+updatedAt: 2026-01-25
+---
+
+I built and shipped [Block Puzzle Master](https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster) to the Google Play Store in 30 days. Here's the exact workflow I used.
+
+## Week 1: Concept & Prototyping
+
+### Day 1-2: Validate the Idea
+
+Before writing code, I validated the concept:
+
+- Researched similar games on Google Play
+- Analyzed reviews to understand what players want
+- Identified gaps — what existing games were missing
+
+The goal was simple: build a puzzle game that feels polished and fun, not just another clone.
+
+### Day 3-5: Core Gameplay Prototype
+
+Built the minimum viable game loop in Unity:
+
+- Block placement mechanics
+- Grid system and collision detection
+- Line clearing logic
+- Basic scoring
+
+No UI, no polish — just the core mechanic. If the gameplay isn't fun at this stage, no amount of polish will fix it.
+
+### Day 6-7: Playtest & Iterate
+
+Played the prototype myself (a lot) and had a few friends test it. Asked:
+
+- Is it intuitive without instructions?
+- Is it satisfying to play?
+- Would you play this again?
+
+Based on feedback, I adjusted the block rotation speed and grid size. Small changes, big impact.
+
+## Week 2: Building the Game
+
+### Day 8-10: UI/UX Design
+
+Created the visual identity:
+
+- Clean, minimal UI
+- Color scheme that doesn't fatigue the eyes
+- Smooth animations for feedback (blocks snapping into place, lines clearing)
+
+Used Unity's UI system and tweaked until it felt right. Good UI is invisible — you don't notice it, but you'd notice if it was bad.
+
+### Day 11-13: Game Features
+
+Added essential features:
+
+- Main menu and settings
+- Sound effects and background music (with mute option)
+- High score tracking
+- Pause and resume functionality
+
+Kept features minimal. The goal was to ship, not to build every feature I could think of.
+
+### Day 14: Mobile Optimization
+
+Tested on different devices:
+
+- Optimized frame rate for low-end phones
+- Adjusted touch controls for different screen sizes
+- Reduced memory usage to prevent crashes
+
+Mobile optimization isn't optional — if your game lags or crashes, users uninstall.
+
+## Week 3: Testing & Iteration
+
+### Day 15-18: Bug Fixing
+
+Played the game obsessively, looking for bugs:
+
+- Edge cases in block placement
+- Score calculation errors
+- UI elements not scaling properly
+- Memory leaks
+
+Fixed bugs as I found them. Kept a list, prioritized by severity.
+
+### Day 19-21: Balance & Polish
+
+Adjusted difficulty curve:
+
+- Are players getting bored too quickly?
+- Are they hitting frustration too early?
+- Is the progression satisfying?
+
+Added juice — small animations, particle effects, screen shake when clearing lines. These details make the game feel alive.
+
+## Week 4: Launch Preparation
+
+### Day 22-24: Google Play Console Setup
+
+Created the Google Play listing:
+
+- **App name** — clear and searchable
+- **Description** — highlighted what makes the game fun
+- **Screenshots** — showing actual gameplay, not just the logo
+- **Icon** — recognizable at small sizes
+
+Wrote the privacy policy and set up app details (age rating, content description, etc.).
+
+### Day 25-26: Build & Upload
+
+Generated the Android App Bundle (AAB) in Unity:
+
+- Configured build settings for release
+- Signed the app with the keystore
+- Uploaded to Google Play Console
+
+First upload failed — wrong versioning. Fixed it, re-uploaded. Second attempt worked.
+
+### Day 27-28: Internal Testing
+
+Used Google Play's internal testing track:
+
+- Shared with a few testers
+- Collected feedback on performance and bugs
+- Made final tweaks
+
+Internal testing catches issues before the public sees them.
+
+### Day 29-30: Launch
+
+Submitted for review. Google Play review took about 24 hours. Once approved, the game went live.
+
+Shared the launch on social media, messaged friends, and monitored the first installs.
+
+## App Store Submission Tips
+
+### What Google Play Looks For
+
+- Clear app description
+- Privacy policy (required)
+- Accurate age rating and content declarations
+- No copyrighted assets (music, graphics, etc.)
+- App follows [Google Play policies](https://play.google.com/about/developer-content-policy/)
+
+### Common Rejections
+
+- Missing privacy policy
+- Inaccurate content rating
+- Crash on startup (test thoroughly!)
+- Misleading screenshots or descriptions
+
+### Approval Time
+
+Google Play review typically takes 1-3 days. If rejected, fix the issue and resubmit. Don't panic — rejections happen.
+
+## Marketing Your First Game
+
+### Pre-Launch
+
+- Build anticipation on social media
+- Share development progress (screenshots, videos)
+- Create a landing page or website
+
+### Post-Launch
+
+- **App Store Optimization (ASO)** — optimize title, description, and keywords
+- **Social media** — share the launch, gameplay clips, user testimonials
+- **Community engagement** — respond to reviews, listen to feedback
+- **Update regularly** — players notice when a game is actively maintained
+
+### What Worked
+
+- Sharing gameplay clips on TikTok and Instagram Reels
+- Responding to every review (positive or negative)
+- Updating the game based on user feedback
+
+### What Didn't Work
+
+- Paid ads (too expensive for an indie game with no revenue yet)
+- Spamming communities with "check out my game" posts
+
+## Lessons Learned
+
+**Ship fast.** 30 days forced me to cut features and focus on what mattered. A finished game beats a perfect idea.
+
+**Playtest early.** If the core loop isn't fun, nothing else matters.
+
+**Mobile optimization is critical.** Your game has to work on cheap phones, not just flagships.
+
+**ASO matters.** A good listing gets more organic installs.
+
+**Respond to reviews.** Users appreciate when developers listen.
+
+## The Numbers
+
+After 30 days and launch:
+
+- Development time: ~100 hours
+- Tools used: Unity, CapCut (for promo videos), Canva (for assets)
+- Initial installs: modest, but growing
+
+Block Puzzle Master is live on [Google Play Store](https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster). It's the first game under [Horizn Games](https://tusharvarshney.com), and there's more coming.
+
+If you're building your first game, 30 days is enough to ship something real. Don't wait for perfect — ship, learn, iterate.
