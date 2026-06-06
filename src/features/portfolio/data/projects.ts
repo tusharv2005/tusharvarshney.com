@@ -222,6 +222,6 @@ export const PROJECTS: Project[] = [
 - Generates animated profile banners that react to user data and LinkedIn activity
 - Implements custom animation engine for smooth transitions and visual effects
 - Built as a self-learning project exploring real-time web technologies and creative automation`,
-    logo: "/livecard.png",
+    logo: "/Livecard.png",
   },
 ]
