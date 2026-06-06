@@ -174,7 +174,7 @@ export function ZodeTerminal({
           duration={1.4}
         />
         <a
-          href="https://zode.ai"
+          href="https://github.com/tusharv2005/zode.ai"
           target="_blank"
           rel="noopener noreferrer"
           className="font-mono text-[11px] text-muted-foreground transition-colors hover:text-foreground"
