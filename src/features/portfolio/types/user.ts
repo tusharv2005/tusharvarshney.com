@@ -21,6 +21,8 @@ export type User = {
   email: string
   /** Personal/homepage URL */
   website: string
+  /** Display name for website (e.g., "example.com" while website is "https://example.vercel.app") */
+  websiteDisplay?: string
   /** Primary/current role shown on profile */
   jobTitle: string
   /** Work history entries */

@@ -19,7 +19,8 @@ export const USER: User = {
   address: "Mumbai, India",
   phoneNumber: "+91 7021871011", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "tvarshney585@gmail.com", // base64 encoded
-  website: "https://tusharvarshney.com",
+  website: "https://tusharvarshney.vercel.app",
+  websiteDisplay: "tusharvarshney.com",
   jobTitle: "AI Engineer",
   jobs: [
     {
