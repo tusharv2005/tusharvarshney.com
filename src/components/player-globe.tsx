@@ -108,7 +108,7 @@ export function PlayerGlobe({
           Players Worldwide
         </span>
         <span className="font-mono text-[11px] tracking-wide text-muted-foreground">
-          Block Puzzle Master! · 20+ countries 🌍
+          Horizn Games · 20+ countries 🌍
         </span>
       </div>
 

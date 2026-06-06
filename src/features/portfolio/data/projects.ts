@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "08.2025",
     },
-    link: "https://react-wheel-picker.tusharvarshney.com",
+    link: "https://github.com/tusharv2005/PetalUI",
     skills: [
       "Open Source",
       "React",
@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "tushardotcom",
-    title: "tusharvarshney.me",
+    title: "tusharvarshney.com",
     period: {
       start: "02.2026",
     },
@@ -96,12 +96,36 @@ export const PROJECTS: Project[] = [
     logo: "/NotchOS.png",
   },
   {
+    id: "nibbo",
+    title: "Nibbo",
+    period: {
+      start: "01.2026",
+    },
+    link: "https://github.com/tusharv2005/Nibbo",
+    skills: [
+      "Pixel Art",
+      "Desktop Application",
+      "Electron",
+      "User Experience",
+      "AI Monitoring",
+      "Real-time Updates",
+    ],
+    description: `Nibbo is your tiny pixel buddy living on your desktop that watches AI coding agents like Claude Code, Codex, and Cursor - so you don't have to.
+- Monitors AI coding agent activity in real-time directly from your desktop
+- Provides visual feedback and status updates through an interactive pixel pet interface
+- Seamlessly integrates with popular AI coding tools to track progress and activity
+- Built to improve developer workflow by offering ambient awareness of AI agent operations
+- Inspired by classic desktop pets reimagined for the modern AI-powered development era
+- Features customizable animations and notifications based on agent behavior`,
+    logo: "/nibbo.png",
+  },
+  {
     id: "klyp",
     title: "klyp",
     period: {
       start: "01.2026",
     },
-    link: "https://github.com/tusharvarshney/taskbox",
+    link: "https://github.com/tusharv2005/klyp",
     skills: [
       "React",
       "TypeScript",
@@ -118,28 +142,7 @@ export const PROJECTS: Project[] = [
 - Built with modern web technologies focused on performance and user experience`,
     logo: "/klyp.png",
   },
-  //   {
-  //     id: "NotchOS",
-  //     title: "NotchOS",
-  //     period: {
-  //       start: "10.2025",
-  //     },
-  //     link: "https://github.com/tusharv2005/NotchOS",
-  //     skills: [
-  //       "Product Engineering",
-  //       "Open Source",
-  //       "macOS",
-  //       "SwiftUI",
-  //       "Productivity",
-  //     ],
-  //     description: `NotchOS transforms the MacBook notch into a powerful productivity hub with media controls, file management, widgets, and system utilities.
-  // - Native macOS application built with SwiftUI and modern Apple frameworks
-  // - Features music controls, file shelf, battery monitoring, and calendar integration
-  // - Inspired by Dynamic Island to enhance workflow and multitasking
-  // - Open-source project focused on improving the macOS desktop experience
-  // `,
-  //     logo: "/NotchOS.png",
-  //   },
+
   //   {
   //     id: "NotchOS",
   //     title: "NotchOS",

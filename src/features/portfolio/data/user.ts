@@ -23,23 +23,23 @@ export const USER: User = {
   jobTitle: "AI Engineer",
   jobs: [
     {
-      title: "Studio Founder",
+      title: "Founder",
       company: "Horizn Games",
       website:
         "https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster",
       experienceId: "HoriznGames",
     },
-    {
-      title: "Founder",
-      company: "Zode.ai",
-      website: "https://github.com/tusharv2005/zode.ai",
-      experienceId: "freelance", // Zode.ai is part of open-source/indie work
-    },
+    // {
+    //   title: "Content Creator",
+    //   company: "Independent",
+    //   website: "https://www.instagram.com/tusharvarshney",
+    //   experienceId: "freelance",
+    // },
   ],
   about: `
 - AI Engineer and indie builder focused on creating AI-native software, developer tools, and interactive digital experiences with strong attention to execution.
 - Passionate about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
-- Creator of [horizngames.com](https://github.com/tusharvarshney/tusharvarshney.com) , [Zode.ai](https://github.com/tusharv2005/zode.ai) (AI coding) , and [PetalUI](https://zadark.com) - building products that scale globally.
+- Creator of [horizngames.com](https://play.google.com/store/apps/details?id=com.horizngames.blockpuzzlemaster&pcampaignid=web_share) , [Zode.ai](https://github.com/tusharv2005/zode.ai) (AI coding) , and [PetalUI](https://github.com/tusharv2005/PetalUI) - building products that scale globally.
 `,
   avatar: "https://assets.tusharvarshney.com/images/tushar-avatar-ghibli.webp",
   avatarVariants: {
